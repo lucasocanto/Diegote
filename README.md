@@ -1,4 +1,3 @@
-
 #####  Grupo 10 
 ## Pizzería "El Diegote"
 
@@ -13,10 +12,6 @@
 * **Daniel Solis:**
 
 * **Lucas Ocanto:** Nerd en general, me gusta mucho leer, andar en bici e ir a la montaña, soy desarrollador Android y laburo en la Secretaría de Culto del Ministerio de Relaciones Exteriores.
-
-#### Público al que nos enfocamos 
-
-Nuestro producto esta destinado a la familia entera.
 
 #### Páginas Web en las que nos inspiramos 
 
