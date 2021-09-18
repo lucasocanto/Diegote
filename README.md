@@ -3,10 +3,9 @@
 
 *Pizza Maradoniana, para disfrutar como si estuvieras viéndo gambetear al Diego en los 80' con los amigos, la familia, solo o con quien te parezca. Para que vuelva la magia y la emoción a la mesa de los argentinos, Pizzería El Diegote.*
 
-#### Publico Objetivo
+#### Público Objetivo
 
-Publico en general y de todas las edades. 
-Haciendo énfasis en el ambiente futbolero y maradoniano.
+Público en general y de todas las edades, haciendo énfasis en el ambiente futbolero y maradoniano.
 
 #### Colaboradores del proyecto 
 
