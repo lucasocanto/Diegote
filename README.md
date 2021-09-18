@@ -21,9 +21,9 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 * **[Punto Pizza](https://www.puntopizza.com.ar/)**
 * **[La Continental](https://www.lacontinental.com/)**
-* [Rappi](https://www.rappi.com.ar/)
-* [Pizza Hut](https://www.pizzahut.es/)
-* [Empanadas "Don Antonio"](https://www.empanadasdonantonio.com/)
+* **[Rappi](https://www.rappi.com.ar/)**
+* **[Pizza Hut](https://www.pizzahut.es/)**
+* **[Empanadas "Don Antonio"](https://www.empanadasdonantonio.com/)**
 
 
 ### Wireframes 
