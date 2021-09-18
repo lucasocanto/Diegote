@@ -24,3 +24,13 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 * [Rappi](https://www.rappi.com.ar/)
 * [Pizza Hut](https://www.pizzahut.es/)
 * [Empanadas "Don Antonio"](https://www.empanadasdonantonio.com/)
+
+
+### Wireframes 
+
+* **Inicio de sesión:**
+* **Registro:**
+* **Inicio:**
+* **Descripción del producto:**
+* **Carrito de compras:**
+ 
