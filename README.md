@@ -28,9 +28,9 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 ### Wireframes 
 
-* **Inicio de sesión:**
-* **Registro:**
-* **Inicio:**
-* **Descripción del producto:**
-* **Carrito de compras:**
+* **Inicio de sesión**
+* **Registro**
+* **Inicio**
+* **Descripción del producto**
+* **Carrito de compras**
  
