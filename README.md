@@ -11,11 +11,11 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 * **Matias De Nicolo:** Maradoniano de pura cepa. Dando sus primeros pasos en el mundo de la programación. Actualemente trabajo como administrativo en empresa de Servicios Ambientales. Me gusta mucho el deporte en general. Hoy en día practico futbol y natación.  
 
-* **Ángel Luis:**
+* **Ángel Luis Quintero:**
 
 * **Daniel Solis:**
 
-* **Lucas Ocanto:** Nerd en general, me gusta mucho leer, andar en bici e ir a la montaña, soy desarrollador Android y laburo en la Secretaría de Culto del Ministerio de Relaciones Exteriores.
+* **Lucas Ocanto:** Nerd en general, me gusta mucho leer, dibujar, andar en bici e ir a la montaña, soy desarrollador Android y laburo en la Secretaría de Culto del Ministerio de Relaciones Exteriores.
 
 #### Páginas Web en las que nos inspiramos 
 
@@ -28,7 +28,7 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 ### Wireframes 
 
-* [Inicio de sesión](https://ibb.co/2MRwkmj)
+* **[Inicio de sesión](https://ibb.co/2MRwkmj)**
 * **Registro**
 * **Inicio**
 * **Descripción del producto**
