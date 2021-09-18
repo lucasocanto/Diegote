@@ -1,16 +1,16 @@
 #####  Grupo 10 
 ## Pizzería "El Diegote"
 
-*Pizza Maradoneana, para disfrutar como si estuvieras viéndo gambetear al Diego en los 80' con los amigos, la familia, solo o con quien te parezca. Para que vuelva la magia y la emoción a la mesa de los argentinos, Pizzería El Diegote.*
+*Pizza Maradoniana, para disfrutar como si estuvieras viéndo gambetear al Diego en los 80' con los amigos, la familia, solo o con quien te parezca. Para que vuelva la magia y la emoción a la mesa de los argentinos, Pizzería El Diegote.*
 
 #### Publico Objetivo
 
 Publico en general y de todas las edades. 
-Haciendo enfasis en el ambiente futbolero y maradoniano.
+Haciendo énfasis en el ambiente futbolero y maradoniano.
 
 #### Colaboradores del proyecto 
 
-* **Matias De Nicolo:** Maradoniano de pura cepa. Dando sus primeros pasos en el mundo de la programacion. Actualemente trabajo como administrativo en empresa de Servicios Ambientales. Me gusta mucho el deporte en general. Hoy en dia practico futbol y natacion.  
+* **Matias De Nicolo:** Maradoniano de pura cepa. Dando sus primeros pasos en el mundo de la programación. Actualemente trabajo como administrativo en empresa de Servicios Ambientales. Me gusta mucho el deporte en general. Hoy en día practico futbol y natación.  
 
 * **Ángel Luis:**
 
