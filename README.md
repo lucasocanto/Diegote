@@ -11,7 +11,7 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 * **Matias De Nicolo:** Maradoniano de pura cepa. Dando sus primeros pasos en el mundo de la programación. Actualemente trabajo como administrativo en empresa de Servicios Ambientales. Me gusta mucho el deporte en general. Hoy en día practico futbol y natación.  
 
-* **Ángel Luis Quintero:**
+* **Ángel Luis:** Tengo 25 años, Naci en Venezuela, a los 21 años vine a Argentina, actualmente trabajo para mercadolibre como System Developer, mis hobbies son jugar futbol y salir con amigos y mi objetivo es expandir mis conocimoentos acerca de desarrollo
 
 * **Daniel Solis:**
 
