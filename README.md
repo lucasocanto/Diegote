@@ -28,7 +28,7 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 #### Nuestro Trello
 
- * [https://trello.com/b/H6bKZ9Bj/grupo10market](Grupo 10 Marketplace)
+ * [Grupo 10 Marketplace](https://trello.com/b/H6bKZ9Bj/grupo10market)
 
 ### Wireframes 
 
