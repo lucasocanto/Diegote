@@ -1,7 +1,7 @@
 #####  Grupo 10 
 ## Pizzería "El Diegote"
 
-*Pizza Maradoniana, para disfrutar como si estuvieras viéndo gambetear al Diego en los 80' con los amigos, la familia, solo o con quien te parezca. Para que vuelva la magia y la emoción a la mesa de los argentinos, Pizzería El Diegote.*
+*Pizza Maradoniana, para disfrutar como si estuvieras viendo gambetear al Diego en los 80' con los amigos, la familia, solo o con quien te parezca. Para que vuelva la magia y la emoción a la mesa de los argentinos, Pizzería El Diegote.*
 
 #### Público Objetivo
 
