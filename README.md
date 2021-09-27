@@ -36,5 +36,5 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 * [Registro](https://ibb.co/PrWZWgq)
 * [Inicio](https://wireframe.cc/pro/pp/fea96e350472681)
 *  [Descripcion del Producto](https://wireframe.cc/fMlKku) 
-* [Carrito] (https://wireframe.cc/RD7cWA)
+* [Carrito de compra](https://wireframe.cc/RD7cWA)
 
