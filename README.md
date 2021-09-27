@@ -32,7 +32,7 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 ### Wireframes 
 
-* [Inicio de sesión](https://ibb.co/J75yT0V)
+* [Inicio de sesión](https://ibb.co/VpkKwQY)
 * [Registro](https://ibb.co/DttT7GP)
 * [Inicio](https://wireframe.cc/pro/pp/fea96e350472681)
 *  [Descripcion del Producto](https://wireframe.cc/fMlKku) 
