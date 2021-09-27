@@ -13,7 +13,7 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 * **Ángel Luis:** Tengo 25 años, nací en Venezuela, a los 21 años vine a Argentina, actualmente trabajo para Mercado Libre como System Developer. Mis hobbies son jugar futbol y salir con amigos y mi objetivo es expandir mis conocimientos acerca de desarrollo.
 
-* **Marcos Solis:** Hola Mundo, aca estoy introduciendome a la programación, con muchas ganas de aprender. Trabajo como operador de cctv en Prosegur, estudio en la UNSAM Administracion de empresas. Dentro de mis hobbies me gusta correr y hoy en dia hacer gym en casa.
+* **Marcos Solis:** Hola Mundo, acá estoy introduciendome a la programación, con muchas ganas de aprender. Trabajo como operador de cctv en Prosegur, estudio en la UNSAM Administración de empresas. Dentro de mis hobbies me gusta correr y hoy en día hacer gym en casa.
 
 * **Lucas Ocanto:** Nerd en general, me gusta mucho leer, dibujar, andar en bici e ir a la montaña, soy desarrollador Android y laburo en la Secretaría de Culto del Ministerio de Relaciones Exteriores.
 
@@ -32,8 +32,8 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 ### Wireframes 
 
-* [Inicio de sesión](https://ibb.co/2MRwkmj)
-* [Registro](https://ibb.co/PrWZWgq)
+* [Inicio de sesión](https://ibb.co/J75yT0V)
+* [Registro](https://ibb.co/DttT7GP)
 * [Inicio](https://wireframe.cc/pro/pp/fea96e350472681)
 *  [Descripcion del Producto](https://wireframe.cc/fMlKku) 
 * [Carrito de compra](https://wireframe.cc/pro/edit/476018)
