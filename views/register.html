@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>mercado-liebre-v2</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <link href="/css/styles.css"
+    rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
+    rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section><img id="register-banner"></section>
+
+        <section id="desktop-view-register-container">
+
+            <section><img id="register-decorative-image"></section>
+
+            <form id="register-form" action="/result-register" method="POST">
+                <section id="social-media-auth-container-register">
+                    <h3 id="title-register">Registro</a>
+                    <div>
+                        <label id="label-google-register" for="name"></label>
+                        <a id="sign-up-with-Google">Continuar con Google</a>
+
+                        <label id="label-fb-register" for="name"></label>
+                        <a id="sign-up-with-Fb">Continuar con Facebook</a>
+
+                        <label id="label-apple-register" for="name"></label>
+                        <a id="sign-up-with-Apple">Continuar con Apple</a>
+                    </div>       
+                </section>
+                <section id="user-data-container-register">
+                    <label id="name-label-register" for="name"></label>
+                    <input type="text" id="input-name-register" name="name"
+                    placeholder="Nombre y apellido" required><br>
+
+                    <label id="mail-label-register" for="mail"></label>
+                    <input type="email" id="input-mail-register" name="mail"
+                    placeholder="Correo electrónico" required><br>
+
+                    <label id="address-label-register" for="address"></label>
+                    <input type="text" id="input-address-register" name="address"
+                    placeholder="Domicilio de entrega"><br>
+
+                    <label class="title-label" for="birthday">Fecha de nacimiento</label><br>
+                    <input type="date" id="input-birthday-register" name="birthday"><br>
+
+                    <label for="password-register"></label>
+                    <input type="password" id="input-password-register" name="password" 
+                    placeholder="Contraseña" required minlength="8"><br>
+
+                    <label for="repite-password"></label>
+                    <input type="password" id="input-repeat-password-register" name="repite-password"
+                     placeholder="Repetir Contraseña" required minlength="8"><br>
+
+                    <label class="title-label"  for="profile-picture"> Cargar foto de perfil</label><br>
+                    <input type="date" id="upload-profile-picture-register" name="profile-picture"><br>
+                    
+                    <button type="submit" id="submit-register">Enviar</button><br>
+                    <button type="reset" id="reset-register">Borrar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+</body>

@@ -24,21 +24,28 @@
             <section><img id="login-decorative-image"></section>
 
             <form id="login-form" action="/result-login" method="POST">
-                <section>
+                <section id="social-media-auth-container-login">
                     <h3 id="title-login">Iniciar sesión</a>
                     <div>
+                        <label id="label-google-login" for="google-sign-in"></label>
                         <a id="login-with-Google">Iniciar con Google</a>
+
+                        <label id="label-fb-login" for="fb-sign-in"></label>
                         <a id="login-with-Fb">Iniciar con Facebook</a>
+
+                        <label id="label-apple-login" for="apple-sign-in"></label>
                         <a id="login-with-Apple">Iniciar con Apple</a>
                     </div>       
                 </section>
-                <section>
-                    <label for="username"></label><br>
-                    <input type="email" id="input-username"name="username"
-                     placeholder="Nombre de usuario" required><br>
-                    <label for="password"></label>
+                <section id="user-data-container-login">
+                    <label for="username-login"></label><br>
+                    <input type="name" id="input-username"name="username"
+                     placeholder="Nombre de usuario" required minlength="8"><br>
+
+                    <label for="password-login"></label>
                     <input type="password" id="input-password" name="password"
                      placeholder="Ingresa tu contraseña" required minlength="8"><br>
+
                     <div id="div-login-remember-user-and-sign-in">
                         <label for="remember-user"> 
                             <input id="checkbox-remember-user"type="checkbox"
@@ -46,10 +53,12 @@
                         </label>
                         <button id="button-submit-login" type="submit">Iniciar sesión</button>
                     </div>
+
                     <div class="div-login">
                         <a class="text-div-login">Ha olvidado su contraseña?</a>
                         <a clas="text-link-div-login">Haga click aquí</a>
                     </div>
+
                     <div class="div-login">
                         <a class="text-div-login">No tiene cuenta?</a>
                         <a clas="text-link-div-login">Cree una</a>
