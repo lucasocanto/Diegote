@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>mercado-liebre-v2</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <link href="/css/styles.css"
+    rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
+    rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section><img id="login-banner"></section>
+
+        <section id="desktop-view-login-container">
+
+            <section><img id="login-decorative-image"></section>
+
+            <form id="login-form" action="/result-login" method="POST">
+                <section>
+                    <h3 id="title-login">Iniciar sesión</a>
+                    <div>
+                        <a id="login-with-Google">Iniciar con Google</a>
+                        <a id="login-with-Fb">Iniciar con Facebook</a>
+                        <a id="login-with-Apple">Iniciar con Apple</a>
+                    </div>       
+                </section>
+                <section>
+                    <label for="username"></label><br>
+                    <input type="email" id="input-username"name="username"
+                     placeholder="Nombre de usuario" required><br>
+                    <label for="password"></label>
+                    <input type="password" id="input-password" name="password"
+                     placeholder="Ingresa tu contraseña" required minlength="8"><br>
+                    <div id="div-login-remember-user-and-sign-in">
+                        <label for="remember-user"> 
+                            <input id="checkbox-remember-user"type="checkbox"
+                             name="remember-user" value="Remember">
+                        </label>
+                        <button id="button-submit-login" type="submit">Iniciar sesión</button>
+                    </div>
+                    <div class="div-login">
+                        <a class="text-div-login">Ha olvidado su contraseña?</a>
+                        <a clas="text-link-div-login">Haga click aquí</a>
+                    </div>
+                    <div class="div-login">
+                        <a class="text-div-login">No tiene cuenta?</a>
+                        <a clas="text-link-div-login">Cree una</a>
+                    </div>
+                </section>
+            </form>
+        </section>
+    </main>
+</body>
