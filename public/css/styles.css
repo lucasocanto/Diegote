@@ -1,0 +1,109 @@
+*{
+    box-sizing:border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#el-diegote-logo{
+    width: 260px;
+    display: flex;
+    align-self: center;
+}
+#title-login{
+    font-size: 23px;
+    font-weight: bold;
+}
+.form-decorative-image{
+    display: none;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+#social-media-auth-container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social-media-auth{
+    border-radius: 7.5px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+    width: 60%;
+    min-width: 170px;
+    max-width: 330px;
+    font-weight: 700;
+}
+#login-with-Google{
+    border: 1.25px red solid;
+    background-color: red;
+    color: white;
+}
+#login-with-fb{
+    border: 1.25px blue solid;
+    background-color: blue;
+    color: white;
+}
+#login-with-Apple{
+    border: 1.25px black solid;
+    background-color: white;
+}
+#o-separador{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+.user-data-input{
+    height: 35px; 
+    width: 60%;
+    border-radius: 5px;
+    border: 2px lightblue solid;
+    padding: 8px;
+    min-width: 150px;
+    max-width: 330px;
+}
+#checkbox-remember-user{
+    width: 15px;
+}
+#remember-user-container{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#button-submit-login{
+    height: 40px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border:  3px solid green;
+    min-width: 60px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#questions-login-container{
+    font-size: 12px;
+}
+
+.text-link-div-login{
+    color: blue;
+}
+@media(min-width: 769px){
+    .form-desktop-view{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        position: relative;
+        bottom: 4px;
+    }
+}
+@media(min-width: 1280px){
+    .form-decorative-image{
+        display:flex;
+        object-fit: fill;
+        width: 100%;
+    }
+}

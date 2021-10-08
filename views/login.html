@@ -17,51 +17,54 @@
 
 <body>
     <main>
-        <section><img id="login-banner"></section>
+        <section class="form-desktop-view" id="login-desktop-view">
 
-        <section id="desktop-view-login-container">
-
-            <section><img id="login-decorative-image"></section>
+            <section><img class="form-decorative-image" id="login-decorative-image"
+                src="./images/diego-mirando-copa.jpg"></section>
 
             <form id="login-form" action="/result-login" method="POST">
+                <img id="el-diegote-logo" src="./images/el-diegote-logo.png">
+                <a id="title-login">Iniciar sesión</a><br><br>
                 <section id="social-media-auth-container-login">
-                    <h3 id="title-login">Iniciar sesión</a>
                     <div>
                         <label id="label-google-login" for="google-sign-in"></label>
-                        <a id="login-with-Google">Iniciar con Google</a>
+                        <button id="login-with-Google" class="social-media-auth">Iniciar con Google</button><br><br>
 
                         <label id="label-fb-login" for="fb-sign-in"></label>
-                        <a id="login-with-Fb">Iniciar con Facebook</a>
+                        <button id="login-with-fb" class="social-media-auth">Iniciar con Facebook</button><br><br>
 
                         <label id="label-apple-login" for="apple-sign-in"></label>
-                        <a id="login-with-Apple">Iniciar con Apple</a>
+                        <button id="login-with-Apple" class="social-media-auth">Iniciar con Apple</button><br><br>
                     </div>       
                 </section>
+                
+                <a id="o-separador">ó</a>
+
                 <section id="user-data-container-login">
                     <label for="username-login"></label><br>
-                    <input type="name" id="input-username"name="username"
-                     placeholder="Nombre de usuario" required minlength="8"><br>
+                    <input class="user-data-input" type="name" id="input-username"name="username"
+                     placeholder="Nombre de usuario" required minlength="8"><br><br>
 
                     <label for="password-login"></label>
-                    <input type="password" id="input-password" name="password"
-                     placeholder="Ingresa tu contraseña" required minlength="8"><br>
+                    <input  class="user-data-input"  type="password" id="input-password" name="password"
+                     placeholder="Ingresa tu contraseña" required minlength="8"><br><br>
 
-                    <div id="div-login-remember-user-and-sign-in">
-                        <label for="remember-user"> 
-                            <input id="checkbox-remember-user"type="checkbox"
-                             name="remember-user" value="Remember">
-                        </label>
-                        <button id="button-submit-login" type="submit">Iniciar sesión</button>
+                     <label id="remember-user-container" for="remember-user">
+                         <input type="checkbox" id="checkbox-remember-user" value="remember-user">
+                         Recordar usuario en este dispositivo</label><br><br>
+
+                    <button id="button-submit-login" type="submit">Iniciar sesión</button><br><br> 
+
+                    <div id="questions-login-container">
+                          <div class="div-login">
+                        <p class="text-div-login">Ha olvidado su contraseña?</a>
+                        <a class="text-link-div-login">Haga click aquí</a>
                     </div>
 
                     <div class="div-login">
-                        <a class="text-div-login">Ha olvidado su contraseña?</a>
-                        <a clas="text-link-div-login">Haga click aquí</a>
-                    </div>
-
-                    <div class="div-login">
-                        <a class="text-div-login">No tiene cuenta?</a>
-                        <a clas="text-link-div-login">Cree una</a>
+                        <p class="text-div-login">No tiene cuenta?</a>
+                        <a class="text-link-div-login">Cree una</a>
+                    </div> 
                     </div>
                 </section>
             </form>
