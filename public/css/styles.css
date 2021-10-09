@@ -7,24 +7,25 @@
     display: flex;
     align-self: center;
 }
-#title-login{
+.form-title{
     font-size: 23px;
     font-weight: bold;
 }
 .form-decorative-image{
     display: none;
 }
-#login-form{
+.form-form{
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     width: 100%;
 }
-#social-media-auth-container-login{
+.social-media-auth-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .social-media-auth{
     border-radius: 7.5px;
@@ -32,25 +33,25 @@
     padding: 5px;
     font-size: 15px;
     width: 60%;
-    min-width: 170px;
+    min-width: 200px;
     max-width: 330px;
     font-weight: 700;
 }
-#login-with-Google{
+.google-auth{
     border: 1.25px red solid;
     background-color: red;
     color: white;
 }
-#login-with-fb{
+.fb-auth{
     border: 1.25px blue solid;
     background-color: blue;
     color: white;
 }
-#login-with-Apple{
+.apple-auth{
     border: 1.25px black solid;
     background-color: white;
 }
-#o-separador{
+.o-separador{
     text-align: center;
     font-size: 16px;
     font-style: italic;
@@ -74,7 +75,7 @@
     justify-content: center;
     align-items: center;
 }
-#button-submit-login{
+.button-submit{
     height: 40px;
     border-radius: 10px;
     background-color: green;
@@ -84,12 +85,30 @@
     font-size: 15px;
     font-weight: 500;
 }
-#questions-login-container{
+.questions-container{
     font-size: 12px;
 }
-
-.text-link-div-login{
+.text-link-div-question{
     color: blue;
+}
+#reset-register{
+    height: 30px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border:  1px solid red;
+    min-width: 60px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#user-data-container-register input{
+    margin-top: 10px;
+}
+#terms-and-conditions-text{
+    font-size: 12px;
+    width: 180px;
+    margin: auto;
 }
 @media(min-width: 769px){
     .form-desktop-view{

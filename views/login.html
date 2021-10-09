@@ -22,23 +22,24 @@
             <section><img class="form-decorative-image" id="login-decorative-image"
                 src="./images/diego-mirando-copa.jpg"></section>
 
-            <form id="login-form" action="/result-login" method="POST">
+            <form id="login-form" class="form-form" action="/result-login" method="POST">
                 <img id="el-diegote-logo" src="./images/el-diegote-logo.png">
-                <a id="title-login">Iniciar sesión</a><br><br>
-                <section id="social-media-auth-container-login">
-                    <div>
+                <a  class="form-title" id="title-login">Iniciar sesión</a><br><br>
+                <section class="social-media-auth-container">
                         <label id="label-google-login" for="google-sign-in"></label>
-                        <button id="login-with-Google" class="social-media-auth">Iniciar con Google</button><br><br>
+                        <button id="login-with-Google"
+                        class="social-media-auth google-auth">Iniciar con Google</button><br>
 
                         <label id="label-fb-login" for="fb-sign-in"></label>
-                        <button id="login-with-fb" class="social-media-auth">Iniciar con Facebook</button><br><br>
+                        <button id="login-with-fb" 
+                        class="social-media-auth fb-auth">Iniciar con Facebook</button><br>
 
                         <label id="label-apple-login" for="apple-sign-in"></label>
-                        <button id="login-with-Apple" class="social-media-auth">Iniciar con Apple</button><br><br>
-                    </div>       
+                        <button id="login-with-Apple" 
+                        class="social-media-auth apple-auth">Iniciar con Apple</button><br> 
                 </section>
                 
-                <a id="o-separador">ó</a>
+                <a class="o-separador">ó</a>
 
                 <section id="user-data-container-login">
                     <label for="username-login"></label><br>
@@ -48,24 +49,27 @@
                     <label for="password-login"></label>
                     <input  class="user-data-input"  type="password" id="input-password" name="password"
                      placeholder="Ingresa tu contraseña" required minlength="8"><br><br>
+                </section>
 
-                     <label id="remember-user-container" for="remember-user">
-                         <input type="checkbox" id="checkbox-remember-user" value="remember-user">
-                         Recordar usuario en este dispositivo</label><br><br>
-
-                    <button id="button-submit-login" type="submit">Iniciar sesión</button><br><br> 
-
-                    <div id="questions-login-container">
-                          <div class="div-login">
-                        <p class="text-div-login">Ha olvidado su contraseña?</a>
-                        <a class="text-link-div-login">Haga click aquí</a>
-                    </div>
-
-                    <div class="div-login">
-                        <p class="text-div-login">No tiene cuenta?</a>
-                        <a class="text-link-div-login">Cree una</a>
-                    </div> 
-                    </div>
+                <section>
+                        <label id="remember-user-container" for="remember-user">
+                            <input type="checkbox" id="checkbox-remember-user" value="remember-user">
+                            Recordar usuario en este dispositivo</label><br><br>
+   
+                       <button class="button-submit" id="button-submit-login"
+                        type="submit">Iniciar sesión</button><br>
+   
+                       <div class="questions-container">
+                           <div class="div-question">
+                           <p class="text-div-question">Ha olvidado su contraseña?</a>
+                           <a href="#" class="text-link-div-question">Haga click aquí</a>
+                           </div>
+   
+                       <div class="div-question">
+                           <p class="text-div-question">No tiene cuenta?</a>
+                           <a href="register" class="text-link-div-question">Cree una</a>
+                       </div> 
+                       </div>
                 </section>
             </form>
         </section>

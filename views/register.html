@@ -17,55 +17,67 @@
 
 <body>
     <main>
-        <section id="desktop-view-register-container">
+        <section class="form-desktop-view"  id="desktop-view-register-container">
 
-            <section><img id="register-decorative-image"></section>
+            <section><img class="form-decorative-image"
+                 id="register-decorative-image" src="./images/diego-mirando-copa.jpg"></section>
 
-            <form id="register-form" action="/result-register" method="POST">
-                <section id="social-media-auth-container-register">
-                    <h3 id="title-register">Registro</a>
-                    <div>
+            <form id="register-form" class="form-form" action="/result-register" method="POST">
+                <p class="form-title" id="title-register">Registro</p><br>
+                <section class="social-media-auth-container">
                         <label id="label-google-register" for="name"></label>
-                        <a id="sign-up-with-Google">Continuar con Google</a>
+                        <button id="sign-up-with-Google" 
+                        class="social-media-auth google-auth">Continuar con Google</button><br>
 
                         <label id="label-fb-register" for="name"></label>
-                        <a id="sign-up-with-Fb">Continuar con Facebook</a>
+                        <button id="sign-up-with-Fb" 
+                        class="social-media-auth fb-auth">Continuar con Facebook</button><br>
 
                         <label id="label-apple-register" for="name"></label>
-                        <a id="sign-up-with-Apple">Continuar con Apple</a>
-                    </div>       
+                        <button id="sign-up-with-Apple" 
+                        class="social-media-auth apple-auth">Continuar con Apple</button><br>  
                 </section>
+
+                <a class="o-separador">ó</a>
+
                 <section id="user-data-container-register">
                     <label id="name-label-register" for="name"></label>
-                    <input type="text" id="input-name-register" name="name"
+                    <input type="text" class="user-data-input"
+                     id="input-name-register" name="name"
                     placeholder="Nombre y apellido" required><br>
 
                     <label id="mail-label-register" for="mail"></label>
-                    <input type="email" id="input-mail-register" name="mail"
+                    <input type="email" class="user-data-input" 
+                    id="input-mail-register" name="mail"
                     placeholder="Correo electrónico" required><br>
 
                     <label id="address-label-register" for="address"></label>
-                    <input type="text" id="input-address-register" name="address"
+                    <input type="text" class="user-data-input"
+                     id="input-address-register" name="address"
                     placeholder="Domicilio de entrega"><br>
 
-                    <label class="title-label" for="birthday">Fecha de nacimiento</label><br>
-                    <input type="date" id="input-birthday-register" name="birthday"><br>
-
                     <label for="password-register"></label>
-                    <input type="password" id="input-password-register" name="password" 
+                    <input type="password" class="user-data-input"
+                     id="input-password-register" name="password" 
                     placeholder="Contraseña" required minlength="8"><br>
 
                     <label for="repite-password"></label>
-                    <input type="password" id="input-repeat-password-register" name="repite-password"
-                     placeholder="Repetir Contraseña" required minlength="8"><br>
+                    <input type="password" class="user-data-input"
+                     id="input-repeat-password-register" name="repite-password"
+                     placeholder="Repetir Contraseña" required minlength="8">
+                    </section><br>
 
-                    <label class="title-label"  for="profile-picture"> Cargar foto de perfil</label><br>
-                    <input type="date" id="upload-profile-picture-register" name="profile-picture"><br>
-                    
-                    <button type="submit" id="submit-register">Enviar</button><br>
-                    <button type="reset" id="reset-register">Borrar</button>
-                </section>
+                    <section>
+                        <button type="submit" class="button-submit"
+                         id="submit-register">Enviar</button><br><br>
+    
+                        <div class="questions-container">
+                            <p class="text-div-login">Ya tiene una cuenta?</a>
+                            <a href="login" class="text-link-div-login">Haga click aquí</a>
+                        </div><br>
+    
+                        <p id="terms-and-conditions-text">Al registrarte estás aceptando los Términos y Condiciones y Políticas de Privacidad</p>
+                    </section>
             </form>
-        </section>
     </main>
 </body>
