@@ -27,6 +27,11 @@ app.post("/result-register", (req,res)=>{
     res.redirect("/")
 })
 
+app.get("/shopping-cart", (req,res)=>{
+    res.sendFile(__dirname + "/views/shopping-cart.html")
+})
+
+
 app.listen(3000,()=>{
     console.log("Server running")
 })
