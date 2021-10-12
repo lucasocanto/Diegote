@@ -19,11 +19,11 @@ Público en general y de todas las edades, haciendo énfasis en el ambiente futb
 
 #### Páginas Web en las que nos inspiramos 
 
-* [Punto Pizza](https://www.puntopizza.com.ar/)
-* [La Continental](https://www.lacontinental.com/)
-* [Rappi](https://www.rappi.com.ar/)
-* [Pizza Hut](https://www.pizzahut.es/)
-* [Empanadas "Don Antonio"](https://www.empanadasdonantonio.com/)
+* [Punto Pizza: ](https://www.puntopizza.com.ar/)Tiene un diseño similar a las grandes aplicaciones propias del rugro en el que estamos trabajando, pero más cercano a lo que podriamos llegar a lograr.
+* [La Continental: ](https://www.lacontinental.com/)Principalmente para tomar una idea de que ofrecer en la home de la página.
+* [Rappi: ](https://www.rappi.com.ar/)Tomamos inspiración de el formato de sus formularios y por su buen diseño en general.
+* [Pizza Hut: ](https://www.pizzahut.es/)Su menú tiene un diseño práctico y muy agradable.
+* [Empanadas "Don Antonio": ](https://www.empanadasdonantonio.com/)También suma para consolidar una idea de como debemos afrontar los layouts y la disposición de los productos que vamos a ofrecer.
 
 
 #### Nuestro Trello
