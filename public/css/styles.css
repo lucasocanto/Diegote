@@ -182,7 +182,28 @@ nav ul li{
 .fa-sign-in-alt{
     color: black;
 }
-@media(min-width: 360px) {
+.social-media-logo{
+    width: 35px;
+    border-radius: 5px;
+}
+#right-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#left-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 12px;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between
 }
 @media(min-width: 769px){
     .form-desktop-view{
