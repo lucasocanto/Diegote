@@ -156,18 +156,18 @@ nav ul li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 #left-footer{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
 }
 footer div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     justify-content: space-between;
     position: relative;
@@ -191,6 +191,26 @@ footer div{
     }
     #input-search{
         width: 240px;
+    }
+    #right-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #left-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+    footer div{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        position: relative;
     }
 }
 @media(min-width: 1280px){
