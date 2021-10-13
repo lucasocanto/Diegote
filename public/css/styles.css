@@ -172,11 +172,6 @@ footer div{
     justify-content: space-between;
     position: relative;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 @media(min-width: 769px){
     .form-desktop-view{
         display: flex;
@@ -211,8 +206,5 @@ footer{
         justify-content:flex-start;
         font-size: 14px;
         position: relative;
-    }
-    footer{
-        position: static;
     }
 }
