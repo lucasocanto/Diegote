@@ -21,41 +21,6 @@
     justify-content: center;
     width: 100%;
 }
-.social-media-auth-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.social-media-auth{
-    border-radius: 7.5px;
-    height: 40px;
-    padding: 5px;
-    font-size: 15px;
-    width: 60%;
-    min-width: 200px;
-    max-width: 330px;
-    font-weight: 700;
-}
-.google-auth{
-    border: 1.25px red solid;
-    background-color: red;
-    color: white;
-}
-.fb-auth{
-    border: 1.25px blue solid;
-    background-color: blue;
-    color: white;
-}
-.apple-auth{
-    border: 1.25px black solid;
-    background-color: white;
-}
-.o-separador{
-    text-align: center;
-    font-size: 16px;
-    font-style: italic;
-}
 .user-data-input{
     height: 35px; 
     width: 60%;
@@ -118,6 +83,7 @@ header{
     padding: 15px;
     display: flex;
     width: 100%;
+    min-width: 250px;
     height: 90px;
     flex-direction: row;
     justify-content: space-between;
@@ -203,7 +169,13 @@ footer div{
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-between
+    justify-content: space-between;
+    position: relative;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 @media(min-width: 769px){
     .form-desktop-view{
@@ -239,5 +211,8 @@ footer div{
         justify-content:flex-start;
         font-size: 14px;
         position: relative;
+    }
+    footer{
+        position: static;
     }
 }
