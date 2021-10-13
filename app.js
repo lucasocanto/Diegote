@@ -31,6 +31,9 @@ app.get("/shopping-cart", (req,res)=>{
     res.sendFile(__dirname + "/views/shopping-cart.html")
 })
 
+app.get("/product-description", (req,res)=>{
+    res.sendFile(__dirname + "/views/product-description.html")
+})
 
 app.listen(3000,()=>{
     console.log("Server running")
