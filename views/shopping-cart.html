@@ -7,14 +7,42 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
     rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+
     <title>Pizzería El Diegote</title>
 
-    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <main>
+        <header>
+            <section id="set-address-container">
+                <p id="set-address-text">Dirección de entrega: </p>
+                <a id="set-address-link">Ingresar mi ubicación</a>
+            </section>
+    
+            <section>
+                 <img id="logo-header" src="./images/el-diegote-logo.png">
+            </section>
+            
+            <section id="search-container">
+                <form id="search-bar-container">
+                <input id="input-search" type="search" placeholder="Ingrese su pizza favorita">
+                <button id="button-search" type="submit"><i class="fas fa-search"></i></button>
+             </form>
+            </section>
+    
+            <section id="nav-header-container">
+                <nav><ul>
+                    <li><a href="login"><i class=" fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="shopping-cart"><i class=" fas fa-shopping-cart"></i></a></li>
+                 </ul></nav>
+            </section>
+        </header>
         <div>
-            <img class="aspirando" src="./images/diegote.jpg" alt="Diego-pizza">
+            <!-- <img class="aspirando" src="./images/diegote.jpg" alt="Diego-pizza"> -->
         </div>
 
         <section class="carrito de compras">
@@ -25,7 +53,14 @@
                 <h3>PRECIO</h3>
                 <h3>SUB-TOTAL</h3>
             </div>
-            <form>
+            <div class="pizzita">
+                <img src="./images/muzza.jpg">
+            </div>
+            <div class="coca">
+                <img src="./images/coca 2.25.jpg">
+            </div>
+
+            <form class="carrito">
                 <label></label>
                 <button type="reset">Borrar</button>
 
@@ -36,6 +71,18 @@
 
     </main>
     <footer>
+        <div>
+            <section id="left-footer">
+                <p id="copyright-footer">© 2021 Pizzería "El Diegote". Todos los derechos reservados.</p>
+            </section>
+    
+            <section id="right-footer">
+                <nav id="nav-social-media-footer"><ul>
+                    <li><a href="#"><img class="social-media-logo" src="./images/whatsapp.png"></a></li>
+                    <li><a href="#"><img class="social-media-logo" src="./images/facebook.png"></a></li>
+                 </ul></nav>
+            </section>
+        </div>
 
     </footer>    
 </body>
