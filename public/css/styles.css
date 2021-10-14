@@ -233,3 +233,38 @@ footer div{
         position: relative;
     }
 }
+
+/* CSS CARRITO  */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    color: #666;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+}
+div.items{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ebebeb;
+}
+.items h3{
+    display: flex;
+    color: #33C4FF;
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: end;
+}
+.pizzita img{
+    width: 20%;
+}
+.coca img{
+    width: 20%;
+}

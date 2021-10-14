@@ -8,16 +8,13 @@ div .aspirando{
     display: inline-block;
     height: 220px;
     width: 100%;
-    /* margin: auto; */
-    /* padding: auto; */
 }
+
 div .aspirando img{
     display: inline-block;
-    /* width: 100%; */
 }
+
 body {
-    /* background-color: #ebebeb; */
-    /* background-color: #eac926; */
     font-family: 'Roboto', sans-serif;
 }
 h2{
@@ -32,6 +29,7 @@ div.items{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid #ebebeb;
 }
 .items h3{
     display: flex;
@@ -43,9 +41,3 @@ form{
     display: flex;
     justify-content: end;
 }
-
-
-/* 
-footer{
-    border-top: 2px solid #ebebeb;
-} */
