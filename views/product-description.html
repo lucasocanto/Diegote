@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="/css/detalleCSS.css">
 </head>
+
+
 <body>
     <header>
         <section id="set-address-container">
@@ -33,47 +35,88 @@
         </section>
     </header>
 
-    
+    <section class="banner-detalle">
+        <img src="images/Maradona_Banner_player_profile (1).jpg" alt="Banner de detalle">
+    </section>
+
     <main> 
         
         <div class="masterContainer"> 
             <div class="container">
-                <div class="box">Pizza 1</div> 
-                <div class="box">Pizza 2</div>
-                <div class="box">Pizza 3</div>
-                <div class="box">Pizza 4</div>
+                <div class="box"><img src= "images/muzzarella.jpg" alt= "foto miniatura 1"></div> 
+                <div class="box"><img src= "images/muzzarella.jpg" alt= "foto miniatura 2"></div> 
+                <div class="box"><img src= "images/muzzarella.jpg" alt= "foto miniatura 3"></div> 
+                <div class="box"><img src= "images/muzzarella.jpg" alt= "foto miniatura 4"></div> 
             </div>
             <div class="mainBox">
-                <img class="img" src= "Aca va imagen de la pizza mas grande" alt= "la foto principal">
+                <img class="img" src= "images/muzzarella.jpg" alt= "la foto principal">
             </div>
             <div class="container1">
-                <p class="detailProduct">Nombre de Pizza</p>
-                <p class="detailProduct">Precio</p>
-                <p class="detailProduct">Tamano</p>
+                <p class="detailProduct">Muzzarella</p>
+                <p class="detailProduct">$ 700</p>
+
                 <div class="container2">
+                    <h2>Tamaño</h2>
+
+                    
+                    <label for="pequeña">Pequeña</label>
+                    <input type="radio" name="tamaño" value="Pequeña">
+                    <label for="mediana">Mediana</label>
+                    <input type="radio" name="tamaño" value="Mediana">
+                    <label for="grande">Grande</label>
+                    <input type="radio" name="tamaño" value="Grande">
+
+                </div>
+
+
+                <!-- <div class="container2">
                     <div class="box1">Pequena</div>
                     <div class="box1">Mediana</div>
                     <div class="box1">Grande</div>
                     
                 </div>
-                
+                -->
+
+
                 <button type="submit">COMPRAR</button>
+                <button type="submit">AÑADIR</button>
                 <button type="submit">CHATEA CON NOSOTROS</button>
                 <div class="subBox1">
-                    <p>Detalle Total del producto --- Detalle total del producto --- Detalle total del producto</p>
+                    <p>Salsa de tomate, muzzarella, aceitunas verdes y orégano</p>
                 </div>
 
-                <p class="detailProduct">Opcionales</p>
-                <div class="container3">
-                    <div class="box1">Opcion 1</div>
-                    <div class="box1">Opcion 2</div>
-                    <div class="box1">Opcion 3</div>
+                <h2 class="container2"> <label for="opcionales">Opcionales</h2>
 
-            </div>
+                
+            <div class="container2">
+                <label for="muzzarella">Muzzarella Extra</label>
+                <input type="checkbox" name="opcionales" value="Muzzarella Extra"> <br>
+                <label for="jamon">Jamon</label>
+                <input type="checkbox" name="opcionales" value="Jamon"><br>
+                <label for="mediaMasa">Media Masa</label>
+                <input type="checkbox" name="opcionales" value="Media Masa">
+            </div>   
+
+    
+            
         
     </main>
     <br><br>
     
+    <footer>
+        <div>
+            <section id="left-footer">
+                <p id="copyright-footer">© 2021 Pizzería "El Diegote". Todos los derechos reservados.</p>
+            </section>
+    
+            <section id="right-footer">
+                <nav id="nav-social-media-footer"><ul>
+                    <li><a href="#"><img class="social-media-logo" src="./images/whatsapp.png"></a></li>
+                    <li><a href="#"><img class="social-media-logo" src="./images/facebook.png"></a></li>
+                 </ul></nav>
+            </section>
+        </div>
+    </footer>
 
 
 

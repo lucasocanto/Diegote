@@ -4,9 +4,15 @@
     padding: 0px;
     font-family: serif;
 }
-.img{
+
+.banner-detalle img {
     width: 100%;
-    height: 100%;
+    height: 500px;
+}
+
+.img{
+    width: 75%;
+    height: 75%;
 }
 
 .masterContainer{ /* masterContainer contiene todas las cajas */
@@ -31,8 +37,8 @@
 
 .box{ /* box es para ubicar miniaturas de las imagenes producto */
     display: flex;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     color: black;
     border: solid 1px black;
     border-radius: 5px;
@@ -42,9 +48,14 @@
     margin: 1%; 
 }
 
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
 .mainBox{ /* mainBox es para la foto mas grande del producto */
     display: flex;
-    width: 90%;
+    width: 100%;
     height: auto;
     border: solid 1px black;
     border-radius: 5px;
@@ -59,16 +70,28 @@
     width: 35%;
     flex-direction: column;
     margin: 1%;  
+    color: black;
 }
 
-.container2{ /* contendor para cajitas selector de tamano */
+.container2{  /*contendor para cajitas selector de tamano 
     display: flex;
     flex-direction: row; 
-    box-sizing: border-box;  
+    box-sizing: border-box;  */
     text-align: center;
+    font-size: 25px;
 }
 
-.box1{ /* Cajas de tamanos */
+
+
+.detailProduct {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/*.box1{ /* Cajas de tamanos 
     width: 70%;
     height: 70%;
     border: solid black 1px;
@@ -79,11 +102,12 @@
     margin: 1%;    
 }
 
-.container3{ /* contiene cajas de opcionales */
+.container3{  contiene cajas de opcionales 
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
+*/
 
 .subBox1 { /* caja para detalles de pizza / producto */
     
@@ -93,9 +117,9 @@
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    text-align: initial;
     box-sizing: border-box;
-    font-size: 100%;
+    font-size: 200%;
     padding: 1%;
 }
 
@@ -105,18 +129,47 @@
     border-radius: 5px;
     margin: 1%;
     width: 100%;
-    background-color: #d2c0b4;
-    color: #fff;
-    border: 1px solid #d2c0b4;
+    background-color: #79d0e4;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #79d0e4;
     transition: all 0.2s ease;
 }
 .container1 button:hover{
-    background-color: rgb(63, 35, 3);
+    background-color: #ce9b5c
 }
 
 
+/*footer*/
+
+.social-media-logo{
+    width: 35px;
+    border-radius: 5px;
+}
+
+#right-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#left-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+}
 
 
+/* desde aca estilo de header*/ 
 
 header{
     padding: 15px;
