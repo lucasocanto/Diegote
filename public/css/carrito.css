@@ -17,7 +17,7 @@ div .aspirando img{
 body {
     font-family: 'Roboto', sans-serif;
 }
-h2{
+.h2-carrito{
     color: #666;
     font-size: 24px;
     text-align: center;
@@ -31,13 +31,13 @@ div.items{
     justify-content: space-between;
     border-bottom: 2px solid #ebebeb;
 }
-.items h3{
+.items .h3-carrito{
     display: flex;
     color: #33C4FF;
     font-size: 20px;
 }
 
-form{
+form .carrito{
     display: flex;
     justify-content: end;
 }
