@@ -395,3 +395,42 @@ footer div{
     }
 
 }
+
+
+ /* CSS CARRITO  */
+
+ .h2-carrito{
+    color: #666;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+}
+div.items{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ebebeb;
+}
+.items .h3-carrito{
+    display: flex;
+    color: #33C4FF;
+    font-size: 20px;
+    justify-content: center;
+}
+
+form .carrito{
+    display: flex;
+    justify-content: end;
+}
+
+.pizzita img{
+    width: 20%;
+}
+
+.pizzita{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}

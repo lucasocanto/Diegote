@@ -46,18 +46,98 @@
         </div>
 
         <section class="carrito de compras">
-            <h2>CARRITO DE COMPRAS</h2>
+            <h2 class="h2-carrito">CARRITO DE COMPRAS</h2>
             <div class="items">
-                <h3>PRODUCTO</h3>
-                <h3>CANTIDAD</h3>
-                <h3>PRECIO</h3>
-                <h3>SUB-TOTAL</h3>
+                <h3 class="h3-carrito">PRODUCTO</h3>
+                <h3 class="h3-carrito">CANTIDAD</h3>
+                <h3 class="h3-carrito">PRECIO</h3>
+                <h3 class="h3-carrito">SUB-TOTAL</h3>
             </div>
             <div class="pizzita">
-                <img src="./images/muzza.jpg">
+                <img src="./images/muzzarella.jpg" alt="muzza">
+                <form id="" action="/resultado-carrito" method="POST">
+                    <!-- <label>Elegí el mes de tu cumpleaños</label> -->
+                    <select name="cantidad">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <input type="number" name="precio">
+                    <input type="number" name="subtotal">
+                </form>
             </div>
-            <div class="coca">
-                <img src="./images/coca 2.25.jpg">
+            <div class="pizzita">
+                <img src="./images/napolitana.jpg" alt="napo">
+                <form id="" action="/resultado-carrito" method="POST">
+                    <!-- <label>Elegí el mes de tu cumpleaños</label> -->
+                    <select name="cantidad">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <input type="number" name="precio">
+                    <input type="number" name="subtotal">
+                </form>
+            </div>
+            <div class="pizzita">
+                <img src="./images/fugazzeta.jpg" alt="fuga">
+                <div class="items-carro">
+                    <form id="" action="/resultado-carrito" method="POST">
+                        <!-- <label>Elegí el mes de tu cumpleaños</label> -->
+                        <select name="cantidad">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                        <!-- <div> -->
+                            <input type="number" name="precio">
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <input type="number" name="subtotal">
+                        <!-- </div> -->
+                    </form>
+                </div>
+            </div>
+            <div class="pizzita">
+                <img src="./images/coca 2.25.jpg" alt="coca">
+                <form id="" action="/resultado-carrito" method="POST">
+                    <!-- <label>Elegí el mes de tu cumpleaños</label> -->
+                    <select name="cantidad">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <input type="number" name="precio">
+                    <input type="number" name="subtotal">
+                </form>
             </div>
 
             <form class="carrito">
