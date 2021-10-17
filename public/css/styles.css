@@ -60,6 +60,9 @@
 .questions-container{
     font-size: 12px;
 }
+.div-question{
+    margin-top: 10px;
+}
 .text-link-div-question{
     color: blue;
 }
@@ -164,7 +167,6 @@ nav ul li{
 /* <ANGEL> */
 
 main {
-    width: 90%;
     margin: 0 auto;
 }
 
