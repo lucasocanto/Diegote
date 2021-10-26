@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- HEAD  -->
+
+<%-  include('./partials/head.ejs') %>
+
+<body style="overflow-x: hidden;">
+    <main>
+        <section class="form-desktop-view"  id="desktop-view-register-container">
+
+            <section><img class="form-decorative-image"
+                 id="register-decorative-image" src="./images/diego-mirando-copa.jpg"></section>
+
+            <form id="register-form" class="form-form" action="/result-register" method="POST">
+                <p class="form-title" id="title-register">Registro</p><br>
+   
+                <section id="user-data-container-register">
+                    <label id="name-label-register" for="name"></label>
+                    <input type="text" class="user-data-input"
+                     id="input-name-register" name="name"
+                    placeholder="Nombre" required><br>
+
+                    <label id="last-name-label-register" for="name"></label>
+                    <input type="text" class="user-data-input"
+                     id="input-last-name-register" name="name"
+                    placeholder="Apellido" required><br>
+
+                    <label id="mail-label-register" for="mail"></label>
+                    <input type="email" class="user-data-input" 
+                    id="input-mail-register" name="mail"
+                    placeholder="Correo electrónico" required><br>
+
+                    <label id="address-label-register" for="address"></label>
+                    <input type="text" class="user-data-input"
+                     id="input-address-register" name="address"
+                    placeholder="Domicilio de entrega"><br>
+
+                    <label for="password-register"></label>
+                    <input type="password" class="user-data-input"
+                     id="input-password-register" name="password" 
+                    placeholder="Contraseña" required minlength="8"><br>
+
+                    <label for="repite-password"></label>
+                    <input type="password" class="user-data-input"
+                     id="input-repeat-password-register" name="repite-password"
+                     placeholder="Repetir Contraseña" required minlength="8">
+                    </section><br>
+
+                    <section>
+                        <button type="submit" class="button-submit"
+                         id="submit-register">Enviar</button><br><br>
+    
+                        <div class="questions-container">
+                            <p class="text-div-login">Ya tiene una cuenta?</a>
+                            <a href="login" class="text-link-div-login">Haga click aquí</a>
+                        </div><br>
+    
+                        <p id="terms-and-conditions-text">Al registrarte estás aceptando los Términos y Condiciones y Políticas de Privacidad</p>
+                    </section>
+            </form>
+    </main>
+
+    <!-- FOOTER  -->
+
+    <%-  include('./partials/footer.ejs') %>
+
+</body>
