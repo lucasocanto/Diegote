@@ -1,4 +1,3 @@
-// Acá nos falta express y el router
 
 const express = require('express');
 
@@ -17,5 +16,9 @@ router.get('/login', mainController.login);
 router.get('/register', mainController.register);
 
 router.get('/kart', mainController.shoppingKart);
+
+router.get('/edit', mainController.productEdit);
+
+router.get('/crate', mainController.productCreate);
 
 module.exports = router

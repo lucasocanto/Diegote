@@ -1,8 +1,3 @@
-// Acá nos falta nuestra fuente de datos
-
-// const recipes = require('../data/recipes.json')
-
-// Acá nos falta un objeto literal con las acciones para cada ruta
 
 let mainController = {
     index: (req, res) => {
@@ -19,6 +14,12 @@ let mainController = {
     },
     shoppingKart: (req, res) => {
         res.render('shoppingKart')
+    },
+    productEdit: (req, res) => {
+        res.render('productEdit')
+    },
+    productCreate: (req, res) => {
+        res.render('productCreate')
     }
 }
 

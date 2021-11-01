@@ -1,7 +1,6 @@
 // Módulos
 const express = require('express');
 const app = express();
-// Acá falta uno... 😇
 
 const path = require('path');
 
