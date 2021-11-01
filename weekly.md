@@ -1,12 +1,6 @@
-#####  Grupo 10 
-
-## Weekly
-
-## Primera semana
-
-* Lectura de consignas del Sprint 3, asignacion de tarea para los integrantes del proyecto con posibles soluciones.
+## Weekly Review
 
 
-## Segunda semana
+#### Primer Meeting
 
-* Finalizar consignas del Sprint 3, poder realizar una previsualizacion grupal de lo entregable y si es necesario corregir algunos puntos.
+* Sobre el mismo, resulto bastante productivo, al menos para dividir los trabajos, organizar nuestro Trello y enfatizar sobre cuestiones que nos aquejan a cada uno, la comunicación del grupo en general es muy buena por lo que se torno bastante fluído, ya veremos en la próxima meeting como resulto lo conversado.
