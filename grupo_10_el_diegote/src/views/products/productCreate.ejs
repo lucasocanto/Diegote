@@ -9,50 +9,13 @@
 
 	<div>
 		<div>
-			<div>
-				<h2 >Formulario de creación de productos</h2>
+			<div class = "title-container">
+				<h2 clas = "title-form-product">Formulario de creación de productos</h2>
 			</div>
-		</div>
+		</div><br><br>
 		<div>
 			<form id="form-create" class = "form-form" action="¿?" method="POST">
-				<div>
-					<div>
-						<label for="name" class="form-label">Nombre del producto:</label>
-						<input type="text" id="name" name="name" placeholder="Ej: Napolitana" class="form-input">
-					</div>
-					<div>
-						<label for="price" class="form-label">Precio del producto:</label>
-						<input type="text" id="price" name="price" placeholder="" class="form-input">
-					</div>
-					<div>
-						<label for="category" class="form-label">Categoría:</label>
-						<select name="category" id="category" class="form-input">
-							<option value="">Elegí</option>
-							<option value="in-sale">En oferta</option>
-							<option value="visited">Últimos agregados</option>
-						</select>
-					</div>
-					<div>
-						<label for="image" class="form-label">Imagen:</label>
-						<input type="file" id="image" name="file" placeholder="" class="form-input">
-					</div>
-
-					<div>
-						<label for="tamaño" class="form-label">Tamaño:</label>
-						<select name="tamaño" id="tamaño" class="form-input">
-							<option value="pequeña">Pequeña</option>
-							<option value="mediana">Mediana</option>
-                          	<option value="grande">Grande</option>
-						</select>
-					</div>
-
-					<div>
-						<label for="description" class="form-label">Descipción:</label>
-						<textarea name="description" id="description" class="form-input"></textarea>
-					</div>
-						<button type="submit" class="buy-now-button">Guardar producto</button>
-					</div>
-				</div>
+				<%- include('partials/productForm') %>
 			</form>
 		</div>
 
