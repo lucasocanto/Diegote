@@ -7,7 +7,12 @@ const mainRouter = require('./src/routes/mainRouter.js');
 
 app.set ('view engine', 'ejs');
 
-app.set('views', path.join(__dirname, 'src/views'))
+app.set('views',[
+    path.join(__dirname, 'src/views'),
+    path.join(__dirname, 'src/views/products') ,
+    path.join(__dirname, 'src/views/users') 
+ ]
+  )
 
 const publicPath = path.resolve(__dirname,"./public")
 
