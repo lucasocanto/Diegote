@@ -7,7 +7,17 @@
 
 /**Formularios crear y editar**/
 
+.form-form div{
+    margin-top: 20px;
+}
 
+#form-edit, #form-create{
+    background-color: lightblue;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+}
 
 /**Formularios crear y editar**/
 
