@@ -4,7 +4,7 @@ let mainController = {
         res.render('index')
     },
     login: (req, res) => {
-        res.render('login')
+        res.render('./users/login')
     },
     register: (req, res) => {
         res.render('register')

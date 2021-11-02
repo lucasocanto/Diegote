@@ -1,4 +1,3 @@
-// Módulos
 const express = require('express');
 const app = express();
 
@@ -8,13 +7,18 @@ const mainRouter = require('./src/routes/mainRouter.js');
 
 app.set ('view engine', 'ejs');
 
-app.set ('views', 'src/views');
+app.set('views', path.join(__dirname, 'src/views'))
 
-app.use(express.static('./public'));
+const publicPath = path.resolve(__dirname,"./public")
+
+app.use(express.static(publicPath))
+
+app.use(express.urlencoded())
 
 app.use('/', mainRouter)
 
 app.use('/details', mainRouter)
 
 app.listen(3000, () => { console.log('Servidor arriba en el puerto 3000 jeje');})
+
 
