@@ -23,3 +23,19 @@
 
 * Damos por cerrado el sprint 3
 * Empezamos a preparar el sprint 4
+
+ #### Sprint 4
+ 
+ #### Que hicimos:
+
+* Dividimos tareas para encarar el 4to sprint 
+* Ajustamos la carpeta del proyecto
+* Aplicamos gitignore 
+
+#### En que nos complicamos:
+
+* N/A
+
+#### Que vamos a hacer:
+
+* N/A
