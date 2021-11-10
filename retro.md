@@ -70,19 +70,23 @@
 
 * Levantar la mano cuando nos estancamos
 
+* Hacer foco en los objetivos durante las reuniones 
+
 #### Continuar haciendo:
 
 * Reuniones semanales entre la semana 
 
 * Mantener una comunicacion fluida a diario 
 
+* Guiarnos en base al tablero de trabajo 
+
 #### Hacer menos:
 
-* 
+* Depender del trabajo de una persona para que los demas 
 
 #### Dejar de hacer:
 
-* 
+* Perder el foco en las weekly 
 
 
 
