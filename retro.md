@@ -58,8 +58,31 @@
 
 * Realizar modificaciones de cosas ya estandarizadas por la mayoria en forma egoísta.
 
-## Sprint 3 
+## Sprint 4
 
+#### Comenzar a hacer: 
+
+* Asignar tareas por persona segun el dominio del tema 
+
+#### Hacer más:
+
+* Reuniones mas seguidas 
+
+* Levantar la mano cuando nos estancamos
+
+#### Continuar haciendo:
+
+* Reuniones semanales entre la semana 
+
+* Mantener una comunicacion fluida a diario 
+
+#### Hacer menos:
+
+* 
+
+#### Dejar de hacer:
+
+* 
 
 
 
