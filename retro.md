@@ -82,7 +82,7 @@
 
 #### Hacer menos:
 
-* Depender del trabajo de una persona para que los demas 
+* Depender del trabajo de una persona para que los demas puedan continuar 
 
 #### Dejar de hacer:
 
