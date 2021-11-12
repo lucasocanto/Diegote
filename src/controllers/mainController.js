@@ -1,7 +1,7 @@
 
 let mainController = {
     index: (req, res) => {
-        res.render('index')
+        res.render('index', {products}); //no se si es correcto este objeto aca//
     },
     login: (req, res) => {
         res.render('login')
@@ -20,7 +20,16 @@ let mainController = {
     },
     productCreate: (req, res) => {
         res.render('productCreate')
-    }
+    },
+    store: (req, res) => {
+        res.send('Producto Creado') // por el momento envie solo un string como vista
+    },
+    update: (req, res) => {
+        res.send('Producto Editado') // por el momento envie solo un string como vista
+    },
+    destroy: (req, res) => {
+        res.send('Producto Eliminado') // por el momento envie solo un string como vista
+    },
 }
 
 module.exports = mainController
