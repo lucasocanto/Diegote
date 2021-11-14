@@ -3,8 +3,6 @@ const app = express();
 
 const path = require('path');
 
-const mainRouter = require('./src/routes/mainRouter.js');
-
 const productsRouter = require('./src/routes/productsRouter.js');
 
 const usersRouter = require('./src/routes/usersRouter.js');
@@ -24,7 +22,7 @@ app.use(express.static(publicPath))
 
 app.use(express.urlencoded())
 
-app.use('/', [mainRouter, usersRouter, productsRouter])
+app.use('/', [usersRouter, productsRouter])
 
 app.listen(3000, () => { console.log('Servidor arriba en el puerto 3000 jeje');})
 
