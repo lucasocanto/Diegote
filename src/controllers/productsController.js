@@ -21,13 +21,45 @@ let productsController = {
         res.render('productCreate')
     },
     store: (req, res) => {
-        res.send('Producto Creado') // por el momento envie solo un string como vista
+
+        let product = req.body
+        product.id = products.length + 1
+        product.image = req.file? req.file.filename : ''
+        products.push(product)
+    
+        fs.writeFileSync(jsonPath, JSON.stringify(products, null, ''))
+
+        res.redirect('/')
     },
     update: (req, res) => {
-        res.send('Producto Editado') // por el momento envie solo un string como vista
+
+        let id = req.params.id
+
+        products.forEach(product=>{
+            if(product.id == id){
+                let updatedProduct = req.body
+                updatedProduct.id = product.id
+                updatedProduct.image = req.file? req.file.filename : ''
+                product = updatedProduct
+            }
+        })
+
+        fs.writeFileSync(jsonPath, JSON.stringify(products, null, ""))
+
+        res.redirect('/')
     },
     destroy: (req, res) => {
-        res.send('Producto Eliminado') // por el momento envie solo un string como vista
+        let id = req.params.id
+
+        products.forEach(product=>{
+            if(product.id == id){
+                products.remove(product)
+            }
+        })
+
+        fs.writeFileSync(jsonPath, JSON.stringify(products, null, ""))
+
+        res.redirect('/')
     },
 }
 

@@ -18,6 +18,10 @@ app.set('views',[
 
 const publicPath = path.resolve(__dirname,"./public")
 
+const methodOverride = require('method-override')
+
+app.use(methodOverride('_method'))
+
 app.use(express.static(publicPath))
 
 app.use(express.urlencoded())
