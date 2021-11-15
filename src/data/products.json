@@ -10,65 +10,65 @@
     {"name":"Pizza de Manzana","price":"230000","category":"visited","file":"","tamaño":"grande","description":"Alta pizzastruli","id":9,"image":""},
     
     {
-    "id": " ",
-    "name": " ",
-    "description": " ",
+    "id": 11,
+    "name": "cancha ",
+    "description": "salsa de tomate y ajo ",
     "image": " ",
-    "category": " ",
-     "price": " "
+    "category": "ofertas ",
+     "price": "200 "
     },
     {
-    "id": " ",
-    "name": " ",
-    "description": " ",
+    "id": 12,
+    "name": "jamon ",
+    "description": "salsa de tomate, muzzarella y jamon ",
     "image": " ",
     "category": " ",
     "price": " "
       },
     {
-    "id": " ",
-    "name": " ",
-    "description": " ",
+    "id": 13,
+    "name": "palmito ",
+    "description": "salsa de tomate, muzzarella y palmito ",
     "image": " ",
     "category": " ",
-    "price": " "
+    "price": "350 "
       },
       {
-    "id": " ",
-    "name": " ",
-    "description": " ",
+    "id": 14,
+    "name": "rucula ",
+    "description": "salsa de tomate, muzzarella, jamon crudo y rucula ",
     "image": " ",
     "category": " ",
-     "price": " "
+     "price": "400 "
      },
       {
-    "id": " ",
-     "name": " ",
-     "description": " ",
+    "id": 15,
+     "name": "provolone ",
+     "description": "salsa de tomate, muzzarella y provolone ",
      "image": " ",
      "category": " ",
      "price": " "
        },
        {
-        "id": " ",
-        "name": " ",
-        "description": " ",
+        "id": 16,
+        "name": "jamon y anana ",
+        "description": "salsa de tomate, muzzarella, jamon y anana ",
         "image": " ",
         "category": " ",
         "price": " "
           },
           {
-        "id": " ",
-        "name": " ",
-        "description": " ",
+        "id": 17,
+        "name": "provenzal ",
+        "description": "salsa de tomate, muzzarella y provenzal ",
         "image": " ",
         "category": " ",
          "price": " "
          },
           {
-        "id": " ",
-         "name": " ",
-         "description": " ",
+        "id": 18,
+         "name": "salchicha ",
+         "description": "salsa de tomate, muzzarella y salchicha ",
          "image": " ",
          "category": " ",
          "price": " "
