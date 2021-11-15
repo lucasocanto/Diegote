@@ -1,11 +1,20 @@
 [
     {
-        "id": " ",
-        "firstName": " ",
-        "lastName": " ",
-        "email": " ",
-        "password": " ",
-        "category": " ",
-        "image": " "
+        "id": "1",
+        "type": "admin",
+        "firstName": "Roberto 'El maleante'",
+        "lastName": "Gimenez",
+        "email": "elmaleante69@gmail.com",
+        "address": "A la vuelta de tu casa 123, Gral. Pacheco",
+        "password": "meencantaelcoliflor"
+    },
+    {
+        "id": "2",
+        "type": "client",
+        "firstName": "Egon",
+        "lastName": "Schiele",
+        "email": "Egon_kpo@yahoo.com",
+        "address": "Pepino 123, Flores",
+        "password": "ricardoruben"
     }
 ]
