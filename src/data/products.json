@@ -7,4 +7,73 @@
     {"id":2,"name":"Jamon y Morrones ","description":"salsa de tomate, muzzarella,jamon, morron rojo, oregano y aceitunas ","image":"images/jamonYMorrones.jpg ","category":"combos","price":240},
     {"id":3,"name":"Fugazzeta ","description":"salsa de tomate, muzzarella, cebolla, oregano y aceitunas ","image":"images/fugazzeta.jpg ","category":"combos","price":270},
     {"id":4,"name":"Napolitana ","description":"salsa de tomate, muzzarella, tomate, oregano y aceitunas","image":"images/napolitana.jpg ","category":"combos","price":230},
-    {"name":"Pizza de Manzana","price":"230000","category":"visited","file":"","tamaño":"grande","description":"Alta pizzastruli","id":9,"image":""}]
+    {"name":"Pizza de Manzana","price":"230000","category":"visited","file":"","tamaño":"grande","description":"Alta pizzastruli","id":9,"image":""},
+    
+    {
+    "id": " ",
+    "name": " ",
+    "description": " ",
+    "image": " ",
+    "category": " ",
+     "price": " "
+    },
+    {
+    "id": " ",
+    "name": " ",
+    "description": " ",
+    "image": " ",
+    "category": " ",
+    "price": " "
+      },
+    {
+    "id": " ",
+    "name": " ",
+    "description": " ",
+    "image": " ",
+    "category": " ",
+    "price": " "
+      },
+      {
+    "id": " ",
+    "name": " ",
+    "description": " ",
+    "image": " ",
+    "category": " ",
+     "price": " "
+     },
+      {
+    "id": " ",
+     "name": " ",
+     "description": " ",
+     "image": " ",
+     "category": " ",
+     "price": " "
+       },
+       {
+        "id": " ",
+        "name": " ",
+        "description": " ",
+        "image": " ",
+        "category": " ",
+        "price": " "
+          },
+          {
+        "id": " ",
+        "name": " ",
+        "description": " ",
+        "image": " ",
+        "category": " ",
+         "price": " "
+         },
+          {
+        "id": " ",
+         "name": " ",
+         "description": " ",
+         "image": " ",
+         "category": " ",
+         "price": " "
+           }
+        
+    
+    
+]
