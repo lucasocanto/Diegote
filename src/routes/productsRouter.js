@@ -19,6 +19,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage})
 
+//una de las rutas de los products
 router.get('/products',productsController.index);
 
 router.get('/products/:id', productsController.productDescription);
@@ -27,9 +28,15 @@ router.get('/shoppingKart', productsController.shoppingKart);
 
 router.get('/products/:id/edit', productsController.productEdit);
 
+//ruta de crear producto "GET"
 router.get('/products/create', productsController.productCreate);
 
-//crear un producto
+
+// //crea pruduct
+// router.get('/products/create', productsController.create)
+
+
+//crear un producto "POST"
 router.post('/products', upload.single('file'), productsController.store);
 
 //Formulario de edición de productos
