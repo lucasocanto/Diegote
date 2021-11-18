@@ -42,6 +42,7 @@
         <section class="combos">
             <h3>MEGA OFERTAS</h3>
             <% products.forEach(product=>{if(product.category == 'MEGA-OFERTAS'){%>
+                <a href="products/<%=product.id%>" class="text-link-div-question">
             <article>
                 <img src=<%= product.image %> alt="muzzarella" class="product_img">
                 <div class="main-article">
@@ -51,12 +52,12 @@
                     <p class="price"><%= product.price %></p>
                     <h4 class="description"><%= product.description %></h4>
                 </div>
-            </article>
+            </article></a>
             <%}})%>
         </section>
 
         <section class="combos">
-            <h3>MEGA OFERTAS</h3>
+            <h3>COMBOS</h3>
             <% products.forEach(product=>{if(product.category == 'combos'){%>
             <article>
                 <img src=<%= product.image %> alt="muzzarella" class="product_img">
