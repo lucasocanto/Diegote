@@ -6,16 +6,24 @@ const products = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'))
 
 let productsController = {
     index: (req, res) => {
-        res.render('index');
+        res.render('index', {products: products});
     },
     productDescription: (req, res) => {
-        res.render('productDescription')
+        let productSelected = {}
+        products.forEach(product=>{
+            if(product.id == req.id) productSelected = product 
+        })
+        res.render('productDescription', {product: productSelected})
     },
     shoppingKart: (req, res) => {
         res.render('shoppingKart')
     },
     productEdit: (req, res) => {
-        res.render('productEdit')
+        let productSelected = {}
+        products.forEach(product=>{
+            if(product.id == req.id) productSelected = product 
+        })
+        res.render('productEdit', {product: productSelected})
     },
     productCreate: (req, res) => {
         res.render('productCreate')

@@ -38,101 +38,37 @@
     </section>
 
     <main>
-
+        
         <section class="combos">
             <h3>MEGA OFERTAS</h3>
+            <% products.forEach(product=>{if(product.category == 'MEGA-OFERTAS'){%>
             <article>
-                <img src="images/muzzarella.jpg" alt="muzzarella" class="product_img">
+                <img src=<%= product.image %> alt="muzzarella" class="product_img">
                 <div class="main-article">
                     <div class="pizzaIco">
                         <i class="fas fa-pizza-slice"></i>
                     </div>
-                    <p class="price">$220</p>
-                    <p class="discount">40% off</p>
-                    <h4 class="description">Muzzarela</h4>
+                    <p class="price"><%= product.price %></p>
+                    <h4 class="description"><%= product.description %></h4>
                 </div>
             </article>
-            <article>
-                <img src="images/jamonYMorrones.jpg" alt="jamonYMorrones" class="product_img">
-                <div class="main-article">
-                    <div class="pizzaIco">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p class="price">$240</p>
-                    <p class="discount">20% off</p>
-                    <h4 class="description">Jamon Y Morron</h4>
-                </div>
-            </article>
-            <article>
-                <img src="images/fugazzeta.jpg" alt="fugazzeta" class="product_img">
-                <div class="main-article">
-                    <div class="pizzaIco">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p class="price">$270</p>
-                    <p class="discount">10% off</p>
-                    <h4 class="description">Fugazzeta</h4>
-                </div>
-            </article>
-            <article>
-                <img src="images/napolitana.jpg" alt="napolitana" class="product_img">
-                <div class="main-article">
-                    <div class="pizzaIco">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p class="price">$230</p>
-                    <p class="discount">10% off</p>
-                    <h4 class="description">Napolitana</h4>
-                </div>
-            </article>
+            <%}})%>
         </section>
 
         <section class="combos">
-            <h3>Combos</h3>
+            <h3>MEGA OFERTAS</h3>
+            <% products.forEach(product=>{if(product.category == 'combos'){%>
             <article>
-                <img src="images/muzzarella.jpg" alt="Muzzarela" class="product_img">
+                <img src=<%= product.image %> alt="muzzarella" class="product_img">
                 <div class="main-article">
                     <div class="pizzaIco">
                         <i class="fas fa-pizza-slice"></i>
                     </div>
-                    <p class="price">$220</p>
-                    <p class="discount">40% off</p>
-                    <h4 class="description">Muzzarela</h4>
+                    <p class="price"><%= product.price %></p>
+                    <h4 class="description"><%= product.description %></h4>
                 </div>
             </article>
-            <article>
-                <img src="images/jamonYMorrones.jpg" alt="jamonYMorrones" class="product_img">
-                <div class="main-article">
-                    <div class="pizzaIco">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p class="price">$240</p>
-                    <p class="discount">20% off</p>
-                    <h4 class="description">Jamon Y Morron</h4>
-                </div>
-            </article>
-            <article>
-                <img src="images/fugazzeta.jpg" alt="fugazzeta" class="product_img">
-                <div class="main-article">
-                    <div class="pizzaIco">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p class="price">$270</p>
-                    <p class="discount">10% off</p>
-                    <h4 class="description">Fugazzeta</h4>
-                </div>
-            </article>
-            <article>
-                <img src="images/napolitana.jpg" alt="napolitana" class="product_img">
-                <div class="main-article">
-                    <div class="pizzaIco">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p class="price">$230</p>
-                    <p class="discount">10% off</p>
-                    <h4 class="description">Napolitana</h4>
-                </div>
-            </article>
+            <%}})%>
         </section>
     </main>
 

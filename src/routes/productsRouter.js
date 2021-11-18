@@ -5,7 +5,6 @@ const router = express.Router();
 
 const productsController = require('../controllers/productsController')
 
-
 const multer = require('multer')
 
 const storage = multer.diskStorage({
@@ -20,21 +19,21 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage})
 
-router.get('/', productsController.index);
+router.get('/products',productsController.index);
 
-router.get('/details', productsController.productDescription);
+router.get('/products/:id', productsController.productDescription);
 
 router.get('/shoppingKart', productsController.shoppingKart);
 
-router.get('/edit', productsController.productEdit);
+router.get('/products/:id/edit', productsController.productEdit);
 
-router.get('/create', productsController.productCreate);
+router.get('/products/create', productsController.productCreate);
 
 //crear un producto
-router.post('/products/create', upload.single('file'), productsController.store);
+router.post('/products', upload.single('file'), productsController.store);
 
 //Formulario de edición de productos
-router.put("/products/:id/edit", upload.single('file'), productsController.update);
+router.put("/products/:id", upload.single('file'), productsController.update);
 
 //Borrar producto
 router.delete("/products/:id", productsController.destroy);
