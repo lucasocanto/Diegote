@@ -1,33 +1,31 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
 
-const path = require('path');
-
-const productsRouter = require('./src/routes/productsRouter.js');
-
-const usersRouter = require('./src/routes/usersRouter.js');
-
-app.set ('view engine', 'ejs');
-
-app.set('views',[
-    path.join(__dirname, 'src/views'),
-    path.join(__dirname, 'src/views/products') ,
-    path.join(__dirname, 'src/views/users') 
- ]
-  )
-
+const path = require('path')
 const publicPath = path.resolve(__dirname,"./public")
 
 const methodOverride = require('method-override')
 
-app.use(methodOverride('_method'))
+const productsRouter = require('./src/routes/productsRouter.js')
+
+const usersRouter = require('./src/routes/usersRouter')
+
+app.use(express.urlencoded({extended: true}))
+
+app.use(express.json())
 
 app.use(express.static(publicPath))
 
-app.use(express.urlencoded())
+app.use(methodOverride('_method'))
 
 app.use('/', [usersRouter, productsRouter])
 
-app.listen(3000, () => { console.log('Servidor arriba en el puerto 3000 jeje');})
+app.set('view engine', 'ejs')
 
+app.set('views', [
+    path.join(__dirname, './src/views'),
+    path.join(__dirname, './src/views/products') ,
+    path.join(__dirname, './src/views/users') 
+])
 
+app.listen(3000, () => { console.log('Server running...') })

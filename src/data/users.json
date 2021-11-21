@@ -10,84 +10,11 @@
     },
     {
         "id": "2",
-        "type": "client2",
-        "firstName": "Egon",
-        "lastName": "Schiele",
-        "email": "Egon_kpo@yahoo.com",
-        "address": "Pepino 123, Flores",
-        "password": "ricardoruben"
-    },
-    {
-        "id": "3",
-        "type": "client3",
-        "firstName": "Roberto 'El maleante'",
-        "lastName": "Gimenez",
-        "email": "elmaleante69@gmail.com",
-        "address": "A la vuelta de tu casa 123, Gral. Pacheco",
-        "password": "meencantaelcoliflor"
-    },
-    {
-        "id": "4",
-        "type": "client4",
-        "firstName": "Egon",
-        "lastName": "Schiele",
-        "email": "Egon_kpo@yahoo.com",
-        "address": "Pepino 123, Flores",
-        "password": "ricardoruben"
-    },
-    {
-        "id": "5",
-        "type": "client5",
-        "firstName": "Roberto 'El maleante'",
-        "lastName": "Gimenez",
-        "email": "elmaleante69@gmail.com",
-        "address": "A la vuelta de tu casa 123, Gral. Pacheco",
-        "password": "meencantaelcoliflor"
-    },
-    {
-        "id": "6",
-        "type": "client6",
-        "firstName": "Egon",
-        "lastName": "Schiele",
-        "email": "Egon_kpo@yahoo.com",
-        "address": "Pepino 123, Flores",
-        "password": "ricardoruben"
-    },
-    {
-        "id": "7",
-        "type": "client7",
-        "firstName": "Roberto 'El maleante'",
-        "lastName": "Gimenez",
-        "email": "elmaleante69@gmail.com",
-        "address": "A la vuelta de tu casa 123, Gral. Pacheco",
-        "password": "meencantaelcoliflor"
-    },
-    {
-        "id": "8",
-        "type": "client8",
-        "firstName": "Egon",
-        "lastName": "Schiele",
-        "email": "Egon_kpo@yahoo.com",
-        "address": "Pepino 123, Flores",
-        "password": "ricardoruben"
-    },
-    {
-        "id": "9",
-        "type": "client9",
-        "firstName": "Roberto 'El maleante'",
-        "lastName": "Gimenez",
-        "email": "elmaleante69@gmail.com",
-        "address": "A la vuelta de tu casa 123, Gral. Pacheco",
-        "password": "meencantaelcoliflor"
-    },
-    {
-        "id": "10",
-        "type": "client10",
+        "type": "client",
         "firstName": "Egon",
         "lastName": "Schiele",
         "email": "Egon_kpo@yahoo.com",
         "address": "Pepino 123, Flores",
         "password": "ricardoruben"
     }
-    
 ]

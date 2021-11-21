@@ -1,7 +1,7 @@
+const express = require('express')
+const router = express.Router()
 
-const express = require('express');
-
-const router = express.Router();
+const path = require('path')
 
 const productsController = require('../controllers/productsController')
 
@@ -9,40 +9,30 @@ const multer = require('multer')
 
 const storage = multer.diskStorage({
     destination: (req,file,cb) => {
-        cb(null, join(__dirname, '../public/images'))
+       cb(null, path.join(__dirname,'../../public/images'))
     },
     filename: (req,file,cb) => {
-        const name = file.filename + 'product-' + Date.now + path.extname(file.originalname)
+        const name = req.params.id + Math.random() + path.extname(file.originalname)
         cb(null, name)
     }
 })
 
 const upload = multer({storage: storage})
 
-//una de las rutas de los products
-router.get('/products',productsController.index);
+router.get('/', productsController.index)
 
-router.get('/products/:id', productsController.productDescription);
+router.get('/products', productsController.index)
 
-router.get('/shoppingKart', productsController.shoppingKart);
+router.get('/products/:id', productsController.description)
 
-router.get('/products/:id/edit', productsController.productEdit);
+router.get('/products/:id/edit', productsController.edit)
 
-//ruta de crear producto "GET"
-router.get('/products/create', productsController.productCreate);
+router.get('/create', productsController.create)
 
+router.post('/products', upload.single('image'),productsController.store)
 
-// //crea pruduct
-// router.get('/products/create', productsController.create)
+router.put('/products/:id', upload.single('image'), productsController.update)
 
-
-//crear un producto "POST"
-router.post('/products', upload.single('file'), productsController.store);
-
-//Formulario de edición de productos
-router.put("/products/:id", upload.single('file'), productsController.update);
-
-//Borrar producto
-router.delete("/products/:id", productsController.destroy);
+router.delete('/product/:id', productsController.delete)  //no funca esto 
 
 module.exports = router

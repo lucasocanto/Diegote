@@ -2,72 +2,48 @@ const fs = require('fs')
 const path = require('path')
 
 const jsonPath = path.join(__dirname, '../data/products.json')
-const products = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'))
+const products = JSON.parse(fs.readFileSync(jsonPath, 'utf-8')) 
 
 let productsController = {
-    index: (req, res) => {
-        res.render('index', {products: products});
+    index: (req,res) => {
+        res.render('index', {products: products})
     },
-    productDescription: (req, res) => {
-        let productSelected = {}
-        products.forEach(product=>{
-            if(product.id == req.id) productSelected = product 
-        })
-        res.render('productDescription', {product: productSelected})
+    description: (req,res) => {
+        let product  = products[req.params.id]
+        let editURL = "/products/" + req.params.id + "/edit"
+        res.render('description', {product: product, editURL: editURL})
     },
-    shoppingKart: (req, res) => {
-        res.render('shoppingKart')
+    edit: (req,res) => {
+        let product  = products[req.params.id]
+        res.render('edit', {product: product})
     },
-    productEdit: (req, res) => {
-        let productSelected = {}
-        products.forEach(product=>{
-            if(product.id == req.id) productSelected = product 
-        })
-        res.render('productEdit', {product: productSelected})
+    create: (req,res) => {         
+        res.render('create')
     },
-    productCreate: (req, res) => {
-        res.render('productCreate')
-    },
-    store: (req, res) => {
-
+    store: (req,res) => {
         let product = req.body
-        product.id = products.length + 1
-        product.image = req.file? req.file.filename : ''
+        product.id = products.length 
+        product.image =  "/images/" + (req.file?req.file.filename : '')
         products.push(product)
-    
+
+        fs.writeFileSync(jsonPath, JSON.stringify(products,null,''))
+        res.redirect('/products')
+    },
+    update: (req,res) => {
+        let newProduct = req.body
+        newProduct.id = req.params.id 
+        newProduct.image =  req.file? "/images/" + req.file.filename : products[newProduct.id].image
+        products[newProduct.id] = newProduct 
+
         fs.writeFileSync(jsonPath, JSON.stringify(products, null, ''))
-
-        res.redirect('/')
+        res.redirect('/products')
     },
-    update: (req, res) => {
-
+    delete: (req,res) => {
         let id = req.params.id
+        products.splice(id,1)
 
-        products.forEach(product=>{
-            if(product.id == id){
-                let updatedProduct = req.body
-                updatedProduct.id = product.id
-                updatedProduct.image = req.file? req.file.filename : ''
-                product = updatedProduct
-            }
-        })
-
-        fs.writeFileSync(jsonPath, JSON.stringify(products, null, ""))
-
-        res.redirect('/')
-    },
-    destroy: (req, res) => {
-        let id = req.params.id
-
-        products.forEach(product=>{
-            if(product.id == id){
-                products.remove(product)
-            }
-        })
-
-        fs.writeFileSync(jsonPath, JSON.stringify(products, null, ""))
-
-        res.redirect('/')
+        fs.writeFileSync(jsonPath, JSON.stringify(products, null, ''))
+        res.redirect('/products')
     },
 }
 

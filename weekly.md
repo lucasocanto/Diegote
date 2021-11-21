@@ -34,8 +34,8 @@
 
 #### En que nos complicamos:
 
-* Definir las rutas correctamente
+* N/A
 
 #### Que vamos a hacer:
 
-* REPASAAAAAR MAS LAS CLASES POR EL AMOR DE D10S
+* N/A
