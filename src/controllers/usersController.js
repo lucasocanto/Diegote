@@ -15,11 +15,10 @@ let usersController = {
         res.render('register')
     },
     save: (req, res) => { 
-     let errors = validationResult(req)
-
+     const errors = validationResult(req)
      if(!errors.isEmpty()) {
         res.render('register', {errors: errors.mapped(), old: req.body}) 
-     } else {
+     }else{
         let user = req.body
         let pass = bcrypt.hashSync(user.password, 10)
         user.repite_password = null
@@ -30,7 +29,7 @@ let usersController = {
         users.push(user)
    
         fs.writeFileSync(jsonPath, JSON.stringify(users,null,''))
-        res.redirect('/products')  
+        res.redirect('/products')   
      }
     },
 }

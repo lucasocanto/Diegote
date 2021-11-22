@@ -39,11 +39,11 @@ let productsController = {
         res.redirect('/products')
     },
     delete: (req,res) => {
-        let id = req.params.id
-        products.splice(id,1)
+        for(let i = 0; i < products.length; i++)
+        if(products[i].id == req.params.id) products.splice(i,1)
 
         fs.writeFileSync(jsonPath, JSON.stringify(products, null, ''))
-        res.redirect('/products')
+        res.redirect('/products') 
     },
 }
 

@@ -19,23 +19,23 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage})
 
-const {body} = require('express-validator')
+const {check} = require('express-validator')
 
 const validateRegister = [
-    /*body('first_name').notEmpty().withMessage('Ingrese su nombre').bail(),
+    check('first_name').trim().notEmpty().withMessage('Ingrese su nombre').bail(),
 
-      body('last_name').notEmpty().withMessage('Inrgese su apellido').bail(),
+    check('last_name').trim().notEmpty().withMessage('Ingrese su apellido').bail(),
 
-    body('mail').notEmpty().withMessage('Complete este campo').bail()
+    check('mail').trim().notEmpty().withMessage('Ingrese su correo electrónico').bail()
     .isEmail().withMessage('Ingrese su correo electrónico').bail(),
 
-    body('password').notEmpty().withMessage('Ingrese una contraseña').bail()
-    .isLength({min: 8}).withMessage('Debe ingresar una contraseña de al menos 8 caracteres').bail(),
+    check('password').trim().notEmpty().withMessage('Ingrese su contraseña').bail()
+    .isLength({min: 8}).withMessage('Su contraseña debe tener al menos 8 caracteres').bail()
+    .normalizeEmail(),
 
-  body('repite_password').notEmpty().withMessage('Vuelva a ingresar su contraseña').bail()
-    .equals('password').withMessage('Las contraseñas no coinciden').bail(),
+    //  falta confirmar contraseña
 
-    body('image').notEmpty().withMessage('Debe cargar una foto de perfil')  */
+    check('image').notEmpty().withMessage('Seleccione una foto de perfil')
 ]
 
 router.get('/login', usersController.login)

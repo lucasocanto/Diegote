@@ -14,13 +14,7 @@
 
             <form id="register-form" class="form-form" action="/register" enctype="multipart/form-data" method="POST">
                 <p class="form-title" id="title-register">Registro</p><br>
-   
-                <% if(locals && locals.errors){ %>
-                    <% for(let error in errors) { %>
-                        <p>"<%= errors[error].msg %>"</p>
-                    <% } %>
-                <% } %>
-
+    
                 <section id="user-data-container-register">
                     <label id="name-label-register" for="first_name"></label>
                     <input type="text" class="user-data-input"

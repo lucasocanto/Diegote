@@ -33,6 +33,6 @@ router.post('/products', upload.single('image'),productsController.store)
 
 router.put('/products/:id', upload.single('image'), productsController.update)
 
-router.delete('/product/:id', productsController.delete)  //no funca esto 
+router.delete('/products/:id', productsController.delete)  //no funca esto 
 
 module.exports = router
