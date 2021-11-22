@@ -12,48 +12,51 @@
             <section><img class="form-decorative-image"
                  id="register-decorative-image" src="./images/diego-mirando-copa.jpg"></section>
 
-            <form id="register-form" class="form-form" action="/result-register" method="POST">
+            <form id="register-form" class="form-form" action="/register" enctype="multipart/form-data" method="POST">
                 <p class="form-title" id="title-register">Registro</p><br>
    
-                <section id="user-data-container-register">
-                    <label id="name-label-register" for="name"></label>
-                    <input type="text" class="user-data-input"
-                     id="input-name-register" name="name"
-                    placeholder="Nombre" required><br>
+                <% if(locals && locals.errors){ %>
+                    <% for(let error in errors) { %>
+                        <p>"<%= errors[error].msg %>"</p>
+                    <% } %>
+                <% } %>
 
-                    <label id="last-name-label-register" for="name"></label>
+                <section id="user-data-container-register">
+                    <label id="name-label-register" for="first_name"></label>
                     <input type="text" class="user-data-input"
-                     id="input-last-name-register" name="name"
-                    placeholder="Apellido" required><br>
+                     id="input-name-register" name="first_name"
+                    placeholder="Nombre"><br>
+
+                    <label id="last-name-label-register" for="last_name"></label>
+                    <input type="text" class="user-data-input"
+                     id="input-last-name-register" name="last_name"
+                    placeholder="Apellido"><br>
 
                     <label id="mail-label-register" for="mail"></label>
                     <input type="email" class="user-data-input" 
                     id="input-mail-register" name="mail"
-                    placeholder="Correo electrónico" required><br>
+                    placeholder="Correo electrónico"><br>
 
                     <label id="address-label-register" for="address"></label>
                     <input type="text" class="user-data-input"
                      id="input-address-register" name="address"
                     placeholder="Domicilio de entrega"><br>
 
-                    <label for="password-register"></label>
+                    <label for="password"></label>
                     <input type="password" class="user-data-input"
                      id="input-password-register" name="password" 
-                    placeholder="Contraseña" required minlength="8"><br>
+                    placeholder="Contraseña" ><br>
 
-                    <label for="repite-password"></label>
+                    <label for="repite_password"></label>
                     <input type="password" class="user-data-input"
-                     id="input-repeat-password-register" name="repite-password"
-                     placeholder="Repetir Contraseña" required minlength="8"><br>
+                     id="input-repeat-password-register" name="repite_password"
+                     placeholder="Repetir Contraseña" ><br>
                      
                      
                     <label for="image" class="form-label"id="avatar-register-label">Selecciona tu foto de perfil</label>
-                    <p id="avatar-register-input"><input type="file" id="image" name="image" class="form-input" required></p>
+                    <p id="avatar-register-input"><input type="file" id="image" name="image" class="form-input" ></p>
                     
-
                     </section><br>
-
-                 
 
                     <section>
                         <button type="submit" class="button-submit"
