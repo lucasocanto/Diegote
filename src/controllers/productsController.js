@@ -9,20 +9,26 @@ let productsController = {
         res.render('index', {products: products})
     },
     description: (req,res) => {
-        let product  = products[req.params.id]
-        let editURL = "/products/" + req.params.id + "/edit"
-        res.render('description', {product: product, editURL: editURL})
+        for(let i = 0; i < products.length; i++)
+        if(products[i].id == req.params.id){
+            let product = products[i]
+            let editURL = "/products/" + req.params.id + "/edit"
+            res.render('description', {product: product, editURL: editURL})
+        }
     },
     edit: (req,res) => {
-        let product  = products[req.params.id]
-        res.render('edit', {product: product})
+        for(let i = 0; i < products.length; i++)
+        if(products[i].id == req.params.id){
+            let = product = products[i]
+            res.render('edit', {product: product})  
+        }
     },
     create: (req,res) => {         
         res.render('create')
     },
     store: (req,res) => {
         let product = req.body
-        product.id = products.length 
+        product.id = Math.random()
         product.image =  "/images/" + (req.file?req.file.filename : '')
         products.push(product)
 
@@ -30,10 +36,13 @@ let productsController = {
         res.redirect('/products')
     },
     update: (req,res) => {
-        let newProduct = req.body
-        newProduct.id = req.params.id 
-        newProduct.image =  req.file? "/images/" + req.file.filename : products[newProduct.id].image
-        products[newProduct.id] = newProduct 
+        for(let i = 0; i < products.length; i++)
+        if(products[i].id == req.params.id){
+            let newProduct = req.body
+           newProduct.id = req.params.id
+           newProduct.image =  req.file? "/images/" + req.file.filename : products[i].image
+           products[i] = newProduct 
+        }
 
         fs.writeFileSync(jsonPath, JSON.stringify(products, null, ''))
         res.redirect('/products')

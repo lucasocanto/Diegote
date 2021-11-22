@@ -23,7 +23,7 @@ let usersController = {
         let pass = bcrypt.hashSync(user.password, 10)
         user.repite_password = null
         user.password = pass
-        user.id = users.length + Math.random() 
+        user.id = Math.random() 
         user.type = 'client' 
         user.image =  "/images/" + (req.file?req.file.filename : '')
         users.push(user)
