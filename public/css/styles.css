@@ -4,7 +4,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 body{
     margin-top: 10px;
 }
@@ -105,10 +104,10 @@ footer div{
 footer{
     padding: 30px;
 }
-
 #address-footer{
     margin-bottom: 20px;
 }
+
 /*  Home  */
 
 section.banner img{
@@ -118,12 +117,10 @@ section.banner img{
     margin-bottom: 15px;
     object-fit: cover ;
 }
-
 #products-home{
     display: flex;
     flex-direction: column;
 }
-
 .products-list{
     display: flex;
     flex-direction: row;
@@ -134,7 +131,6 @@ section.banner img{
     padding: 10px;
     width: 100%;
 }
-
 article{
     width: 90%;
     max-width: 90%;
@@ -146,22 +142,18 @@ article{
     flex-direction: column;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
 .image{
     width: 100%;
     height: 200px;
 }
-
 article:hover{
     box-shadow: 0px 4px 10px rgb(100, 100, 100);
 }
-
 .list-title{
     margin: 40px;
     font-size: 26px;
     font-weight: 400;
 }
-
 .article-description{
     padding: 15px;
     display: flex;
@@ -171,11 +163,9 @@ article:hover{
     color: black;
     text-decoration: none;
 }
-
 .price{
     margin-top: 10px;
 }
-
 .name{
     font-weight: 500;
 }
@@ -185,7 +175,6 @@ article:hover{
 #description-main{
     margin-top: 30px;
 }
-
 #description-div-container{
     display: flex;
     flex-direction: column-reverse;
@@ -197,44 +186,36 @@ article:hover{
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
 #image-section{
     width: 70%;
     text-align: center;
     margin-bottom: 30px;
 }
-
 #text-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: rgb(100 100 100) 0px 0px 10px;
     border-radius: 5px;
     justify-content: start;
     text-align: center;
     align-self: center;
-    width: 50%;
+    width: 100%;
     max-width: 300px;
     min-width: 250px;
 }
-
 #details-section{
     border-bottom: 1px solid lightgray;
 }
-
 #buttons-section{
     border-top: 1px solid lightgray;
 }
-
 #options-section{
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .form-input-description{
     margin-top: 5px;
     width: 200px;
@@ -242,20 +223,17 @@ article:hover{
     position: relative;
     right: 5%;
 }
-
 .form-label-description{
     font-size: 14px;
     font-weight: 500;
 }
-
 #description-image{
-    width: 80%;
+    height: 250px;
+    width: 250px;
     min-width: 200px;
-    height: 220px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
 .button-buy{
     background-color: green;
     border: green;
@@ -265,37 +243,32 @@ article:hover{
     margin-top: 25px;
     width: 60%;
 }
-
 .button-buy:hover{
     background-color: rgb(2, 109, 2);
 }
-
 #description-name{
     font-size: 20px;
     font-weight: 500;
     margin-top: 30px;
 }
-
 #description-price{
     margin-top: 10px;
 }
-
 #description-description{
     margin: 20px;
     font-style: italic;
     padding: 5px;
 }
-
 #button-add-to-cart{
     margin-bottom: 35px;
 }
+
 /*  Products Form  */
 
 form h3{
     text-align: center;
     margin-top: 15px;
 }
-
 form div{
     margin-top: 20px;
     display: flex;
@@ -317,7 +290,7 @@ form div{
 }
 #edit-form, #create-form{
     background-color: lightblue;
-    width: 60%;
+    width: 90%;
     margin: auto;
     border-radius: 5px;
     border: solid 0.5px black;
@@ -342,7 +315,6 @@ form div{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 #button-cancel{
     background-color: red;
     width: 100%;
@@ -350,11 +322,9 @@ form div{
 #button-cancel:hover{
     background-color: brown;
 }
-
 .product-form-cancel{
     width: 100%;
 }
-
 .button-save:hover{
     background-color: rgb(2, 109, 2);
 }
@@ -365,7 +335,6 @@ form div{
     position: relative;
     top: 25px;
 }
-
 #el-diegote-logo{
     width: 260px;
     display: flex;
@@ -446,9 +415,58 @@ form div{
     margin: auto;
 }
 
+/*  Admin  */
+
+.a-admin{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.admin-button{
+    background-color: green;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+}
+.admin-button:hover{
+    background-color: rgb(2, 109, 2);
+}
+#delete-button{
+    background-color: red;
+}
+#delete-button:hover{
+    background-color:brown;
+}
+#edit-admin-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/*  Icons  */
+
+.fa-shopping-cart{
+    color: black;
+    background-color:lightskyblue;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.fa-sign-in-alt{
+    color: black;
+}
+.fa-shopping-cart:hover{
+    background-color: rgb(74, 175, 238);
+}
+
 @media(min-width: 361px){
     #description-div-container{
         width: 90%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     #description-main{
         margin-top: 20px;
@@ -459,9 +477,11 @@ form div{
         height: 400px;
     }
     #description-image{
-        width: 80%;
-        height: 260px;
+        height: 270px;
+        width: 90%;
         min-width: 210px;
+        position: relative;
+        top: 15px;
     }
 }
 
@@ -514,22 +534,18 @@ form div{
     .products-list{
         justify-content: space-around;
     }
-
     #description-div-container{
         flex-direction: row-reverse;
     }
-
     #description-image{
         width: 330px;
         height: 300px;
     }
-
     #image-section{
         padding: 40px;
         margin-bottom: 0px;
         width: 50%;
     }
-
     #text-section{
         margin-right: 40px;
         margin-left: 60px;
@@ -544,6 +560,8 @@ form div{
         display:flex;
         object-fit: fill;
         width: 100%;
+        position: relative;
+        bottom: 10px;
     }
     #set-address-container{
         display: flex;
@@ -562,58 +580,9 @@ form div{
     .products-list{
         justify-content: space-between;
     }
-}
-
-/*  Admin  */
-
-.a-admin{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    text-decoration: none;
-}
-
-.admin-button{
-    background-color: green;
-    color: white;
-    border: transparent;
-    border-radius: 5px;
-    padding: 10px;
-    width: 200px;
-}
-
-.admin-button:hover{
-    background-color: rgb(2, 109, 2);
-}
-
-#delete-button{
-    background-color: red;
-}
-
-#delete-button:hover{
-    background-color:brown;
-}
-
-#edit-admin-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
-/*  Icons  */
-
-.fa-shopping-cart{
-    color: black;
-    background-color:lightskyblue;
-    padding: 7px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-.fa-sign-in-alt{
-    color: black;
-}
-
-.fa-shopping-cart:hover{
-    background-color: rgb(74, 175, 238);
+    @media(min-width: 1600px){
+        .image{
+            height: 340px;
+        }
+    }
 }
