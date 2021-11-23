@@ -24,10 +24,25 @@
                     </article>
             <%}})%>
         </section>
+
+        <p class = "list-title"> Favoritas de la casa</p>
+        <section class="products-list" id="favs-list">
+            <% products.forEach(product=>{%>
+                <% if(product.category == 'favs'){%>
+                    <article>
+                        <img class= "image" src=<%= product.image %>>
+                        <a href="products/<%=product.id%>" class="article-description">
+                            <p class="name"><%= product.name %></p>
+                            <p class="price">$<%= product.price %>-</p>
+                       </a>
+                    </article>
+            <%}})%>
+        </section>
     
         <p class = "list-title"> Todas nuestras pizzas</p>
         <section class="products-list" id="full-list">
             <% products.forEach(product=>{%>
+                <% if(product.category != "drinks"){ %>
                 <article>
                     <img class= "image" src=<%= product.image %>>
                     <a href="products/<%=product.id%>" class="article-description">
@@ -35,8 +50,22 @@
                         <p class="price">$<%= product.price %>-</p>
                    </a>
                 </article>
-            <%})%>
+            <%}})%>
         </section>
+    </section>
+
+    <p class = "list-title"> Bebidas</p>
+    <section class="products-list" id="drinks-list">
+        <% products.forEach(product=>{%>
+            <% if(product.category == 'drinks'){%>
+                <article>
+                    <img class= "image" src=<%= product.image %>>
+                    <a href="products/<%=product.id%>" class="article-description">
+                        <p class="name"><%= product.name %></p>
+                        <p class="price">$<%= product.price %>-</p>
+                   </a>
+                </article>
+        <%}})%>
     </section>
 
     <section>

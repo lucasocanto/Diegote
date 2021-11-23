@@ -20,12 +20,26 @@ let usersController = {
         res.render('register', {errors: errors.mapped(), old: req.body}) 
      }else{
         let user = req.body
-        let pass = bcrypt.hashSync(user.password, 10)
+
+        for(let i = 0; i < users.lenght; i ++) 
+        if(user.mail == users[i].mail){
+            //  mandar error 'ya se encuentra registrado'
+            res.render('register', {errors: errors.mapped(), old: req.body}) 
+        }
+
+        if(user.password == user.repite_password){
+            //   mandar error 'no coinciden las pass'
+            res.render('register', {errors: errors.mapped(), old: req.body}) 
+        }
+
+        let encriptedPass = bcrypt.hashSync(user.password, 10)
         user.repite_password = null
-        user.password = pass
+        user.password = encriptedPass
+
         user.id = Math.random() 
         user.type = 'client' 
         user.image =  "/images/" + (req.file?req.file.filename : '')
+
         users.push(user)
    
         fs.writeFileSync(jsonPath, JSON.stringify(users,null,''))
