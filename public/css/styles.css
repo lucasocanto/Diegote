@@ -580,9 +580,10 @@ form div{
     .products-list{
         justify-content: space-between;
     }
-    @media(min-width: 1600px){
-        .image{
-            height: 340px;
-        }
+}
+
+@media(min-width: 1600px){
+    .image{
+        height: 340px;
     }
 }

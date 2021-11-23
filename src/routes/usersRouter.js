@@ -24,7 +24,7 @@ const {check} = require('express-validator')
 const validateRegister = [
     check('first_name').trim().notEmpty().withMessage('Ingrese su nombre').bail(),
 
-    check('last_name').trim().notEmpty().withMessage('Ingrese su apellido').bail(),
+  /*  check('last_name').trim().notEmpty().withMessage('Ingrese su apellido').bail(),
 
     check('mail').trim().notEmpty().withMessage('Ingrese su correo electrónico').bail()
     .isEmail().withMessage('Ingrese su correo electrónico').bail(),
@@ -35,14 +35,14 @@ const validateRegister = [
 
     //  falta confirmar contraseña
 
-    check('image').notEmpty().withMessage('Seleccione una foto de perfil')
+    check('image').notEmpty().withMessage('Seleccione una foto de perfil')    */
 ]
 
 router.get('/login', usersController.login)
 
 router.get('/register', usersController.register)
 
-router.post('/register', validateRegister, upload.single('image'), usersController.save) 
+router.post('/register', upload.single('image'), validateRegister, usersController.save) 
 
 //opcional de recordar usuario con una cookie calculo
 
