@@ -424,6 +424,11 @@ form div{
     margin: auto;
 }
 
+.back-home{
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
 /*  Admin  */
 
 .a-admin{
