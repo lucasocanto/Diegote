@@ -17,17 +17,20 @@ let usersController = {
     save: (req, res) => { 
      const errors = validationResult(req)
      if(!errors.isEmpty()) {
-        res.render('register', {errors: errors.mapped(), old: req.body}) 
+        res.render('register', {errors: errors.array(), old: req.body}) 
+        return
      }else{
         let user = req.body
 
-        for(let i = 0; i < users.lenght; i ++) 
+        for(let i = 0; i < users.length; i ++) 
         if(user.mail == users[i].mail){
-              res.render('register', {alreadyRegistered :"El mail " +  user.mail + " ya se encuentra registrado", old: req.body}) 
+            res.render('register', {alreadyRegistered :"El mail " +  user.mail + " ya se encuentra registrado", old: req.body}) 
+            return
         }
 
-        if(user.password == user.repite_password){
+        if(user.password != user.repite_password){
             res.render('register', {passwordsDontMatch: "No coinciden las contraseñas", old: req.body}) 
+            return
         }
 
         let encriptedPass = bcrypt.hashSync(user.password, 10)

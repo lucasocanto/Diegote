@@ -35,7 +35,7 @@ const validateRegister = [
 
     check('repite_password').trim().notEmpty().withMessage('Vuelva a ingresar su contraseña').bail(),
 
-    check('image').notEmpty().withMessage('Seleccione una foto de perfil')    
+   /*  falta agregar middleware para checkear si se cargo una foto de perfil  */    
 ]
 
 router.get('/login', usersController.login)
