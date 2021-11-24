@@ -18,6 +18,8 @@
                 </section>
                 <section id="options-section">
                     <form>
+
+                        <%if(product.category != "drinks"){%>
                         <div>
                             <label for="tamaño" class="form-label-description">Tamaño:</label>
                             <select name="tamaño" id="tamaño" class="form-input-description">
@@ -26,6 +28,7 @@
                                 <option value="grande">Grande</option>
                             </select>
                         </div>
+                        <%}%>
 
                         <div>
                             <label for="cantidad" class="form-label-description">Cantidad:</label>
