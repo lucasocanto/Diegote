@@ -23,13 +23,11 @@ let usersController = {
 
         for(let i = 0; i < users.lenght; i ++) 
         if(user.mail == users[i].mail){
-            //  mandar error 'ya se encuentra registrado'
-            res.render('register', {errors: errors.mapped(), old: req.body}) 
+              res.render('register', {alreadyRegistered :"El mail " +  user.mail + " ya se encuentra registrado", old: req.body}) 
         }
 
         if(user.password == user.repite_password){
-            //   mandar error 'no coinciden las pass'
-            res.render('register', {errors: errors.mapped(), old: req.body}) 
+            res.render('register', {passwordsDontMatch: "No coinciden las contraseñas", old: req.body}) 
         }
 
         let encriptedPass = bcrypt.hashSync(user.password, 10)
