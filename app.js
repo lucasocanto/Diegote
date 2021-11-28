@@ -10,6 +10,9 @@ const productsRouter = require('./src/routes/productsRouter.js')
 
 const usersRouter = require('./src/routes/usersRouter')
 
+// pa requerir session
+const session = require ('express-session');
+
 app.use(express.urlencoded({extended: true}))
 
 app.use(express.json())
@@ -19,6 +22,8 @@ app.use(express.static(publicPath))
 app.use(methodOverride('_method'))
 
 app.use('/', [usersRouter, productsRouter])
+
+app.use(session({secret: 'secreto'}))
 
 app.set('view engine', 'ejs')
 
