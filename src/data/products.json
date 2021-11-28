@@ -2,7 +2,8 @@
     "description":"Salsa de tomate, muzzarella, oregano y aceitunas ",
     "image":"/images/muzzarella.jpg",
     "category":"offer",
-    "price":200},
+    "price":800},
+    
     {"id":1,"name":"Jamon y Morrones ",
         "description":"salsa de tomate, muzzarella,jamon, morron rojo, oregano y aceitunas ",
         "image":"/images/jamonYMorrones.jpg ",
