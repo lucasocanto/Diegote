@@ -89,5 +89,38 @@
 * Perder el foco en las weekly 
 
 
+## Sprint 5
+
+#### Comenzar a hacer: 
+
+* Comenzar a codear desde el lanzamiento del Sprint. 
+
+* Finalizado el Sprint realizar una meeting para correjir y compartir experiencias.
+
+#### Hacer más:
+
+* Reuniones mas seguidas 
+
+* Hacer hincapie en los inconvenientes que aparecen durante el Sprint. 
+
+* Verificar los tiempos libres de cada integrante para poder organizarnos de la mejor manera de cara a las distintas reuniones.
+
+#### Continuar haciendo:
+
+* Reuniones semanales entre la semana 
+
+* Mantener una comunicacion fluida a diario 
+
+* Mantener el buen orden y buen clima del grupo.
+
+* Guiarnos en base al tablero de trabajo 
+
+#### Hacer menos:
+
+* Reuniones deorganizadas.
+
+#### Dejar de hacer:
+
+* Perder el foco en las weekly 
 
 
