@@ -12,6 +12,7 @@ const usersRouter = require('./src/routes/usersRouter')
 
 // pa requerir session
 const session = require ('express-session');
+const recordameMiddleware = require('./src/middlewares/recordameMiddleware.js')
 
 app.use(express.urlencoded({extended: true}))
 
@@ -24,6 +25,8 @@ app.use(methodOverride('_method'))
 app.use('/', [usersRouter, productsRouter])
 
 app.use(session({secret: 'secreto'}))
+
+app.use(recordameMiddleware)
 
 app.set('view engine', 'ejs')
 
