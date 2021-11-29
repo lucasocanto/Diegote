@@ -39,3 +39,24 @@
 #### Que vamos a hacer:
 
 * N/A
+
+
+#### Sprint 5
+ 
+ #### Que hicimos:
+
+* Dividimos tareas para encarar el 5to sprint 
+* Fijamos nueva dia/hora de weekly 
+* Implementamos los middlewares requeridos en este punto.
+ 
+
+#### En que nos complicamos:
+
+* A medida que avanzamos los temas son mas complejos. Por esto demoramos mas en finalizar y cerrar el Sprint.
+
+#### Que vamos a hacer:
+
+* Damos por cerrado el sprint 5 una vez realizados todos los puntos.
+* Verificar entre todos la funcionalidad de la pagina.
+
+
