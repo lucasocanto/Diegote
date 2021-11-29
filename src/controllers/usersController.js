@@ -32,6 +32,13 @@ let usersController = {
             res.render('register', {passwordsDontMatch: "No coinciden las contraseñas", old: req.body}) 
             return
         }
+        //pa la cookie
+        if(req.body.recordame != undefined) {
+            res.cookie('recordame', usuarioALoguearse.email, {maxAge:90000})
+        }
+
+
+        }
 
         let encriptedPass = bcrypt.hashSync(user.password, 10)
         user.repite_password = null
