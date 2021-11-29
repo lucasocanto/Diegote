@@ -126,7 +126,7 @@ section.banner img{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: whitesmoke;
     padding: 10px;
     width: 100%;
@@ -169,7 +169,6 @@ article:hover{
 .name{
     font-weight: 500;
 }
-
 /* Product Description */
 
 #description-main{
@@ -489,7 +488,7 @@ form div{
         background-color: whitesmoke;
     }
     .image{
-        height: 400px;
+        height: 320px;
     }
     #description-image{
         height: 200px;
@@ -498,9 +497,13 @@ form div{
         position: relative;
         top: 15px;
     }
+    #drink{
+        width: 27%;
+        height: 280px;
+    }
 }
 
-@media(min-width: 767px){
+@media(min-width: 601px){
     .form-desktop-view{
         display: flex;
         width: 100%;
@@ -572,9 +575,13 @@ form div{
         margin-right: 40px;
         margin-left: 60px;
     }
+    #drink{
+        width: 26%;
+        height: auto;
+    }
 }
 
-@media(min-width: 1280px){
+@media(min-width: 1075px){
     .form-title{
         margin-top: 10px;
     }
@@ -601,6 +608,9 @@ form div{
     }
     .products-list{
         justify-content: space-between;
+    }
+    #drink{
+        width: 16%;
     }
 }
 

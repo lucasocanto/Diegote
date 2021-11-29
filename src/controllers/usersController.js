@@ -38,8 +38,6 @@ let usersController = {
         }
 
 
-        }
-
         let encriptedPass = bcrypt.hashSync(user.password, 10)
         user.repite_password = null
         user.password = encriptedPass
@@ -53,7 +51,8 @@ let usersController = {
         fs.writeFileSync(jsonPath, JSON.stringify(users,null,''))
         res.redirect('/products')   
      }
-    },
+    }
 }
+
 
 module.exports = usersController

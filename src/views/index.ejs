@@ -55,10 +55,10 @@
     </section>
 
     <p class = "list-title"> Bebidas</p>
-    <section class="products-list" id="drinks-list">
+    <section class="products-list" >
         <% products.forEach(product=>{%>
             <% if(product.category == 'drinks'){%>
-                <article>
+                <article id="drink">
                     <img class= "image" src=<%= product.image %>>
                     <a href="products/<%=product.id%>" class="article-description">
                         <p class="name"><%= product.name %></p>
