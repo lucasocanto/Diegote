@@ -1,11 +1,8 @@
-const fs = require('fs')
-const path = require('path')
+const model = require('../models/User')
 
-const jsonPath = path.join(__dirname, '../data/users.json')
-const users = JSON.parse(fs.readFileSync(jsonPath, 'utf-8')) 
+const bcryptjs = require('bcryptjs')
 
 const  {validationResult} = require('express-validator')
-const bcrypt = require('bcryptjs')
 
 let usersController = {
     login: (req, res) => {
@@ -20,10 +17,10 @@ let usersController = {
         res.render('register', {errors: errors.array(), old: req.body}) 
         return
      }else{
+
         let user = req.body
 
-        for(let i = 0; i < users.length; i ++) 
-        if(user.mail == users[i].mail){
+        if(model.findByField("mail", req.body.mail) != undefined){
             res.render('register', {alreadyRegistered :"El mail " +  user.mail + " ya se encuentra registrado", old: req.body}) 
             return
         }
@@ -32,25 +29,27 @@ let usersController = {
             res.render('register', {passwordsDontMatch: "No coinciden las contraseñas", old: req.body}) 
             return
         }
-        //pa la cookie
+
+        //pa la cookie 
         if(req.body.recordame != undefined) {
             res.cookie('recordame', usuarioALoguearse.email, {maxAge:90000})
         }
 
-
-        let encriptedPass = bcrypt.hashSync(user.password, 10)
-        user.repite_password = null
-        user.password = encriptedPass
-
-        user.id = Math.random() 
-        user.type = 'client' 
         user.image =  "/images/" + (req.file?req.file.filename : '')
+        model.create(user)
 
-        users.push(user)
-   
-        fs.writeFileSync(jsonPath, JSON.stringify(users,null,''))
-        res.redirect('/products')   
+        res.redirect('/login')   
      }
+    },
+    auth: (req, res) => {
+        let user = model.findByField('mail', req.body.mail)
+        let checkPass = bcryptjs.compareSync(req.body.password, user.password)
+        if(user != undefined && checkPass){
+         res.redirect('/')
+        }
+        else{
+           res.render('login') 
+        } 
     }
 }
 

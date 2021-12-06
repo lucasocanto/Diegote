@@ -336,6 +336,8 @@ form div{
     padding: 5px;
     border-radius: 5px;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #avatar-register-label, #avatar-register-input{
@@ -375,7 +377,6 @@ form div{
     width: 15px;
 }
 #remember-user-container{
-    font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;

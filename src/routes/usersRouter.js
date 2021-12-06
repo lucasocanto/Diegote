@@ -38,8 +38,6 @@ const validateRegister = [
    /*  falta agregar middleware para checkear si se cargo una foto de perfil  */    
 ]
 
-router.get('/login', usersController.login)
-
 router.get('/register', usersController.register)
 
 router.post('/register', upload.single('image'), validateRegister, usersController.save) 
@@ -47,5 +45,10 @@ router.post('/register', upload.single('image'), validateRegister, usersControll
 //opcional de recordar usuario con una cookie calculo
 
 // fatlta el inicio de sesion, despues de eso configurar que la pagina se vea diferente para admins y clientes 
+
+router.get('/login', usersController.login)
+
+router.post('/login', usersController.auth)
+
 
 module.exports = router

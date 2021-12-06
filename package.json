@@ -13,10 +13,25 @@
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "express-validator": "^6.13.0",
+    "fs": "0.0.1-security",
     "http-errors": "~1.6.3",
     "method-override": "^3.0.0",
     "morgan": "~1.9.1",
     "multer": "^1.4.3",
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": "*Pizza Maradoniana, para disfrutar como si estuvieras viendo gambetear al Diego en los 80' con los amigos, la familia, solo o con quien te parezca. Para que vuelva la magia y la emoción a la mesa de los argentinos, Pizzería El Diegote.*",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeluisq96/grupo_10_el_diegote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angeluisq96/grupo_10_el_diegote/issues"
+  },
+  "homepage": "https://github.com/angeluisq96/grupo_10_el_diegote#readme"
 }
